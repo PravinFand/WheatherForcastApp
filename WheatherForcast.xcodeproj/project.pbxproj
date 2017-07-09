@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F1054E5946BB3BED4752A9 /* libPods-WheatherForcastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D578421832D5404EE02C79D6 /* libPods-WheatherForcastTests.a */; };
+		7A8392F91FE91207E5624B51 /* libPods-WheatherForcast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA166634B5774DEBD113E5F9 /* libPods-WheatherForcast.a */; };
+		CD50E81ED1161EE6D0D84B0C /* libPods-WheatherForcastUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3195E7E77B4B1A5A7702EF5 /* libPods-WheatherForcastUITests.a */; };
+		D82E0BEE1F113368000B7EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BED1F113368000B7EEA /* main.m */; };
+		D82E0BF11F113368000B7EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BF01F113368000B7EEA /* AppDelegate.m */; };
+		D82E0BF41F113368000B7EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BF31F113368000B7EEA /* ViewController.m */; };
+		D82E0BF71F113368000B7EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82E0BF51F113368000B7EEA /* Main.storyboard */; };
+		D82E0BFA1F113368000B7EEA /* WheatherForcast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BF81F113368000B7EEA /* WheatherForcast.xcdatamodeld */; };
+		D82E0BFC1F113368000B7EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82E0BFB1F113368000B7EEA /* Assets.xcassets */; };
+		D82E0BFF1F113368000B7EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82E0BFD1F113368000B7EEA /* LaunchScreen.storyboard */; };
+		D82E0C0A1F113369000B7EEA /* WheatherForcastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0C091F113369000B7EEA /* WheatherForcastTests.m */; };
+		D82E0C151F113369000B7EEA /* WheatherForcastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0C141F113369000B7EEA /* WheatherForcastUITests.m */; };
+		D84E89A91F124EFE00045844 /* CustomLocationPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89A81F124EFE00045844 /* CustomLocationPickerVC.m */; };
+		D84E89AB1F124FDF00045844 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84E89AA1F124FDF00045844 /* CoreLocation.framework */; };
+		D84E89B41F12507200045844 /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89AE1F12507200045844 /* CommonFunctions.m */; };
+		D84E89B51F12507200045844 /* NSString+urlencode.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89B01F12507200045844 /* NSString+urlencode.m */; };
+		D84E89B61F12507200045844 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89B31F12507200045844 /* Config.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D82E0C061F113369000B7EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D82E0BE11F113367000B7EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82E0BE81F113367000B7EEA;
+			remoteInfo = WheatherForcast;
+		};
+		D82E0C111F113369000B7EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D82E0BE11F113367000B7EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82E0BE81F113367000B7EEA;
+			remoteInfo = WheatherForcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		295905C29A44118AC04EEA01 /* Pods-WheatherForcastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcastTests/Pods-WheatherForcastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4555361B8077AD1DC57E657A /* Pods-WheatherForcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcast/Pods-WheatherForcast.debug.xcconfig"; sourceTree = "<group>"; };
+		6F9A23F8B46A7C4CBA3D1AD8 /* Pods-WheatherForcastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcastUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcastUITests/Pods-WheatherForcastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C9BF896EB490DDF554299BE /* Pods-WheatherForcastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcastUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcastUITests/Pods-WheatherForcastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C250D653856DB53C16F3FF5 /* Pods-WheatherForcastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcastTests/Pods-WheatherForcastTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3195E7E77B4B1A5A7702EF5 /* libPods-WheatherForcastUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WheatherForcastUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F55C011E97E6C54C405E8B /* Pods-WheatherForcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcast/Pods-WheatherForcast.release.xcconfig"; sourceTree = "<group>"; };
+		D578421832D5404EE02C79D6 /* libPods-WheatherForcastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WheatherForcastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82E0BE91F113367000B7EEA /* WheatherForcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherForcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82E0BED1F113368000B7EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D82E0BEF1F113368000B7EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D82E0BF01F113368000B7EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D82E0BF21F113368000B7EEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D82E0BF31F113368000B7EEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D82E0BF61F113368000B7EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D82E0BF91F113368000B7EEA /* WheatherForcast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheatherForcast.xcdatamodel; sourceTree = "<group>"; };
+		D82E0BFB1F113368000B7EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D82E0BFE1F113368000B7EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D82E0C001F113368000B7EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82E0C051F113369000B7EEA /* WheatherForcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherForcastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82E0C091F113369000B7EEA /* WheatherForcastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheatherForcastTests.m; sourceTree = "<group>"; };
+		D82E0C0B1F113369000B7EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82E0C101F113369000B7EEA /* WheatherForcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherForcastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82E0C141F113369000B7EEA /* WheatherForcastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheatherForcastUITests.m; sourceTree = "<group>"; };
+		D82E0C161F113369000B7EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84E89A71F124EFE00045844 /* CustomLocationPickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationPickerVC.h; sourceTree = "<group>"; };
+		D84E89A81F124EFE00045844 /* CustomLocationPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationPickerVC.m; sourceTree = "<group>"; };
+		D84E89AA1F124FDF00045844 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D84E89AD1F12507200045844 /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
+		D84E89AE1F12507200045844 /* CommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunctions.m; sourceTree = "<group>"; };
+		D84E89AF1F12507200045844 /* NSString+urlencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+urlencode.h"; sourceTree = "<group>"; };
+		D84E89B01F12507200045844 /* NSString+urlencode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlencode.m"; sourceTree = "<group>"; };
+		D84E89B21F12507200045844 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		D84E89B31F12507200045844 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		FA166634B5774DEBD113E5F9 /* libPods-WheatherForcast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WheatherForcast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D82E0BE61F113367000B7EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84E89AB1F124FDF00045844 /* CoreLocation.framework in Frameworks */,
+				7A8392F91FE91207E5624B51 /* libPods-WheatherForcast.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E0C021F113369000B7EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F1054E5946BB3BED4752A9 /* libPods-WheatherForcastTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E0C0D1F113369000B7EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD50E81ED1161EE6D0D84B0C /* libPods-WheatherForcastUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6818260E00D12F90AFDDB788 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4555361B8077AD1DC57E657A /* Pods-WheatherForcast.debug.xcconfig */,
+				C5F55C011E97E6C54C405E8B /* Pods-WheatherForcast.release.xcconfig */,
+				295905C29A44118AC04EEA01 /* Pods-WheatherForcastTests.debug.xcconfig */,
+				9C250D653856DB53C16F3FF5 /* Pods-WheatherForcastTests.release.xcconfig */,
+				8C9BF896EB490DDF554299BE /* Pods-WheatherForcastUITests.debug.xcconfig */,
+				6F9A23F8B46A7C4CBA3D1AD8 /* Pods-WheatherForcastUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D739CC89A6C2A271DB2B8A2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84E89AA1F124FDF00045844 /* CoreLocation.framework */,
+				FA166634B5774DEBD113E5F9 /* libPods-WheatherForcast.a */,
+				D578421832D5404EE02C79D6 /* libPods-WheatherForcastTests.a */,
+				C3195E7E77B4B1A5A7702EF5 /* libPods-WheatherForcastUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D82E0BE01F113367000B7EEA = {
+			isa = PBXGroup;
+			children = (
+				D82E0BEB1F113368000B7EEA /* WheatherForcast */,
+				D82E0C081F113369000B7EEA /* WheatherForcastTests */,
+				D82E0C131F113369000B7EEA /* WheatherForcastUITests */,
+				D82E0BEA1F113367000B7EEA /* Products */,
+				6818260E00D12F90AFDDB788 /* Pods */,
+				D739CC89A6C2A271DB2B8A2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D82E0BEA1F113367000B7EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D82E0BE91F113367000B7EEA /* WheatherForcast.app */,
+				D82E0C051F113369000B7EEA /* WheatherForcastTests.xctest */,
+				D82E0C101F113369000B7EEA /* WheatherForcastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D82E0BEB1F113368000B7EEA /* WheatherForcast */ = {
+			isa = PBXGroup;
+			children = (
+				D84E89A61F124EFE00045844 /* CustomLocationPicker */,
+				D82E0BEF1F113368000B7EEA /* AppDelegate.h */,
+				D82E0BF01F113368000B7EEA /* AppDelegate.m */,
+				D82E0BF21F113368000B7EEA /* ViewController.h */,
+				D82E0BF31F113368000B7EEA /* ViewController.m */,
+				D82E0BF51F113368000B7EEA /* Main.storyboard */,
+				D82E0BFB1F113368000B7EEA /* Assets.xcassets */,
+				D82E0BFD1F113368000B7EEA /* LaunchScreen.storyboard */,
+				D82E0C001F113368000B7EEA /* Info.plist */,
+				D82E0BF81F113368000B7EEA /* WheatherForcast.xcdatamodeld */,
+				D82E0BEC1F113368000B7EEA /* Supporting Files */,
+			);
+			path = WheatherForcast;
+			sourceTree = "<group>";
+		};
+		D82E0BEC1F113368000B7EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D82E0BED1F113368000B7EEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D82E0C081F113369000B7EEA /* WheatherForcastTests */ = {
+			isa = PBXGroup;
+			children = (
+				D82E0C091F113369000B7EEA /* WheatherForcastTests.m */,
+				D82E0C0B1F113369000B7EEA /* Info.plist */,
+			);
+			path = WheatherForcastTests;
+			sourceTree = "<group>";
+		};
+		D82E0C131F113369000B7EEA /* WheatherForcastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D82E0C141F113369000B7EEA /* WheatherForcastUITests.m */,
+				D82E0C161F113369000B7EEA /* Info.plist */,
+			);
+			path = WheatherForcastUITests;
+			sourceTree = "<group>";
+		};
+		D84E89A61F124EFE00045844 /* CustomLocationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D84E89AC1F12507200045844 /* CommonFunctions */,
+				D84E89B11F12507200045844 /* Config */,
+				D84E89A71F124EFE00045844 /* CustomLocationPickerVC.h */,
+				D84E89A81F124EFE00045844 /* CustomLocationPickerVC.m */,
+			);
+			path = CustomLocationPicker;
+			sourceTree = SOURCE_ROOT;
+		};
+		D84E89AC1F12507200045844 /* CommonFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				D84E89AD1F12507200045844 /* CommonFunctions.h */,
+				D84E89AE1F12507200045844 /* CommonFunctions.m */,
+				D84E89AF1F12507200045844 /* NSString+urlencode.h */,
+				D84E89B01F12507200045844 /* NSString+urlencode.m */,
+			);
+			path = CommonFunctions;
+			sourceTree = "<group>";
+		};
+		D84E89B11F12507200045844 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D84E89B21F12507200045844 /* Config.h */,
+				D84E89B31F12507200045844 /* Config.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D82E0BE81F113367000B7EEA /* WheatherForcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82E0C191F113369000B7EEA /* Build configuration list for PBXNativeTarget "WheatherForcast" */;
+			buildPhases = (
+				4CA9CD8B1A1CA4B2C7150060 /* [CP] Check Pods Manifest.lock */,
+				D82E0BE51F113367000B7EEA /* Sources */,
+				D82E0BE61F113367000B7EEA /* Frameworks */,
+				D82E0BE71F113367000B7EEA /* Resources */,
+				D2EEE16A843EE0A8C6812759 /* [CP] Embed Pods Frameworks */,
+				5C0DD5FD962DA3583CC6830B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WheatherForcast;
+			productName = WheatherForcast;
+			productReference = D82E0BE91F113367000B7EEA /* WheatherForcast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D82E0C041F113369000B7EEA /* WheatherForcastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82E0C1C1F113369000B7EEA /* Build configuration list for PBXNativeTarget "WheatherForcastTests" */;
+			buildPhases = (
+				2A2DD3B9845E5164CDDB286B /* [CP] Check Pods Manifest.lock */,
+				D82E0C011F113369000B7EEA /* Sources */,
+				D82E0C021F113369000B7EEA /* Frameworks */,
+				D82E0C031F113369000B7EEA /* Resources */,
+				6BB95A81BE2ACAF5ED310586 /* [CP] Embed Pods Frameworks */,
+				D0E77BAAAFBA5E087C28C004 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D82E0C071F113369000B7EEA /* PBXTargetDependency */,
+			);
+			name = WheatherForcastTests;
+			productName = WheatherForcastTests;
+			productReference = D82E0C051F113369000B7EEA /* WheatherForcastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D82E0C0F1F113369000B7EEA /* WheatherForcastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82E0C1F1F113369000B7EEA /* Build configuration list for PBXNativeTarget "WheatherForcastUITests" */;
+			buildPhases = (
+				E10023705BF1FDFCAA941E64 /* [CP] Check Pods Manifest.lock */,
+				D82E0C0C1F113369000B7EEA /* Sources */,
+				D82E0C0D1F113369000B7EEA /* Frameworks */,
+				D82E0C0E1F113369000B7EEA /* Resources */,
+				5E7AAEEC508D06FF19593C18 /* [CP] Embed Pods Frameworks */,
+				C67ACA63860CA51D259E6810 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D82E0C121F113369000B7EEA /* PBXTargetDependency */,
+			);
+			name = WheatherForcastUITests;
+			productName = WheatherForcastUITests;
+			productReference = D82E0C101F113369000B7EEA /* WheatherForcastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D82E0BE11F113367000B7EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pravin Raosaheb Fand";
+				TargetAttributes = {
+					D82E0BE81F113367000B7EEA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D82E0C041F113369000B7EEA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D82E0BE81F113367000B7EEA;
+					};
+					D82E0C0F1F113369000B7EEA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D82E0BE81F113367000B7EEA;
+					};
+				};
+			};
+			buildConfigurationList = D82E0BE41F113367000B7EEA /* Build configuration list for PBXProject "WheatherForcast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D82E0BE01F113367000B7EEA;
+			productRefGroup = D82E0BEA1F113367000B7EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D82E0BE81F113367000B7EEA /* WheatherForcast */,
+				D82E0C041F113369000B7EEA /* WheatherForcastTests */,
+				D82E0C0F1F113369000B7EEA /* WheatherForcastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D82E0BE71F113367000B7EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82E0BFF1F113368000B7EEA /* LaunchScreen.storyboard in Resources */,
+				D82E0BFC1F113368000B7EEA /* Assets.xcassets in Resources */,
+				D82E0BF71F113368000B7EEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E0C031F113369000B7EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E0C0E1F113369000B7EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A2DD3B9845E5164CDDB286B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA9CD8B1A1CA4B2C7150060 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C0DD5FD962DA3583CC6830B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherForcast/Pods-WheatherForcast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E7AAEEC508D06FF19593C18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherForcastUITests/Pods-WheatherForcastUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BB95A81BE2ACAF5ED310586 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherForcastTests/Pods-WheatherForcastTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C67ACA63860CA51D259E6810 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherForcastUITests/Pods-WheatherForcastUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E77BAAAFBA5E087C28C004 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherForcastTests/Pods-WheatherForcastTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2EEE16A843EE0A8C6812759 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherForcast/Pods-WheatherForcast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10023705BF1FDFCAA941E64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D82E0BE51F113367000B7EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84E89A91F124EFE00045844 /* CustomLocationPickerVC.m in Sources */,
+				D84E89B61F12507200045844 /* Config.m in Sources */,
+				D84E89B51F12507200045844 /* NSString+urlencode.m in Sources */,
+				D82E0BF41F113368000B7EEA /* ViewController.m in Sources */,
+				D84E89B41F12507200045844 /* CommonFunctions.m in Sources */,
+				D82E0BF11F113368000B7EEA /* AppDelegate.m in Sources */,
+				D82E0BFA1F113368000B7EEA /* WheatherForcast.xcdatamodeld in Sources */,
+				D82E0BEE1F113368000B7EEA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E0C011F113369000B7EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82E0C0A1F113369000B7EEA /* WheatherForcastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E0C0C1F113369000B7EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82E0C151F113369000B7EEA /* WheatherForcastUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D82E0C071F113369000B7EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82E0BE81F113367000B7EEA /* WheatherForcast */;
+			targetProxy = D82E0C061F113369000B7EEA /* PBXContainerItemProxy */;
+		};
+		D82E0C121F113369000B7EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82E0BE81F113367000B7EEA /* WheatherForcast */;
+			targetProxy = D82E0C111F113369000B7EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D82E0BF51F113368000B7EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D82E0BF61F113368000B7EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D82E0BFD1F113368000B7EEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D82E0BFE1F113368000B7EEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D82E0C171F113369000B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D82E0C181F113369000B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D82E0C1A1F113369000B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4555361B8077AD1DC57E657A /* Pods-WheatherForcast.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WheatherForcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PSRRF.WheatherForcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D82E0C1B1F113369000B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5F55C011E97E6C54C405E8B /* Pods-WheatherForcast.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WheatherForcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PSRRF.WheatherForcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D82E0C1D1F113369000B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 295905C29A44118AC04EEA01 /* Pods-WheatherForcastTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WheatherForcastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PSRRF.WheatherForcastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheatherForcast.app/WheatherForcast";
+			};
+			name = Debug;
+		};
+		D82E0C1E1F113369000B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C250D653856DB53C16F3FF5 /* Pods-WheatherForcastTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WheatherForcastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PSRRF.WheatherForcastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheatherForcast.app/WheatherForcast";
+			};
+			name = Release;
+		};
+		D82E0C201F113369000B7EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9BF896EB490DDF554299BE /* Pods-WheatherForcastUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WheatherForcastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PSRRF.WheatherForcastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WheatherForcast;
+			};
+			name = Debug;
+		};
+		D82E0C211F113369000B7EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9A23F8B46A7C4CBA3D1AD8 /* Pods-WheatherForcastUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = WheatherForcastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PSRRF.WheatherForcastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WheatherForcast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D82E0BE41F113367000B7EEA /* Build configuration list for PBXProject "WheatherForcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82E0C171F113369000B7EEA /* Debug */,
+				D82E0C181F113369000B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82E0C191F113369000B7EEA /* Build configuration list for PBXNativeTarget "WheatherForcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82E0C1A1F113369000B7EEA /* Debug */,
+				D82E0C1B1F113369000B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82E0C1C1F113369000B7EEA /* Build configuration list for PBXNativeTarget "WheatherForcastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82E0C1D1F113369000B7EEA /* Debug */,
+				D82E0C1E1F113369000B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82E0C1F1F113369000B7EEA /* Build configuration list for PBXNativeTarget "WheatherForcastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82E0C201F113369000B7EEA /* Debug */,
+				D82E0C211F113369000B7EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D82E0BF81F113368000B7EEA /* WheatherForcast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D82E0BF91F113368000B7EEA /* WheatherForcast.xcdatamodel */,
+			);
+			currentVersion = D82E0BF91F113368000B7EEA /* WheatherForcast.xcdatamodel */;
+			path = WheatherForcast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D82E0BE11F113367000B7EEA /* Project object */;
+}

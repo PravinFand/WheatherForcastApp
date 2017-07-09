@@ -1,0 +1,1556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015E4F5614576ED875180109774643B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		0255C49CF877D7B35A8AEA0DDA6C162F /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF3D9C434615BBBEFCC2E7C14D0B9B4 /* JSONAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		08281D15A67E2295966F12BBE8F56999 /* KFOWMSystemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B93C008276BA3B762513468097667F3A /* KFOWMSystemModel.m */; };
+		08CD7C0F3287AE71FCC88C262E5B5BA5 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 82AAE8441BDA04032A68363F8BFC4416 /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A6BDF89F3B75AE938105C490787B70C /* KFOpenWeatherMapAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A703B25CD16B32AD0D58D5B9F6E1B07F /* KFOpenWeatherMapAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B4B6766BADE27F473740297FF9FD17E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64716173FC0305057230E14CDCC7A77 /* CoreGraphics.framework */; };
+		0BBAC59CA836B253AE8CE9EC95D01295 /* Pods-WheatherForcastUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F7CF3695320CDB054A2B603E974142 /* Pods-WheatherForcastUITests-dummy.m */; };
+		0DE8FA6F2FE343362F09AF2504588BB6 /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = A069A11C1D0F7A7F3AFDB6152477F85E /* LMAddress.m */; };
+		12A9501D8C29AC0F83B9A54A4CBB3666 /* KFOWMWeatherModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D0453CCAB7A430C352516250546D2C04 /* KFOWMWeatherModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12B3FB55E6A1FF8B119D3814B27DC13C /* KFOWMWeatherResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E26A31BC2A9154099EB5AF1249B2CD /* KFOWMWeatherResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1340D0544171853C1A2C329444E25FFE /* KFOWMSearchResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAD828F5E868D0C16CCFB22AF71BCBF /* KFOWMSearchResponseModel.m */; };
+		18F22C5A8C19A63423D2C1CD96587419 /* Pods-WheatherForcastTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 619D32A63E6E33970AEC5A82361A45F0 /* Pods-WheatherForcastTests-dummy.m */; };
+		1A23F73F84E707A3504AAD09C06DE3A3 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC5A0EF290336FB638973DEB3E66254 /* JSONModelError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1AAA70E698A9A1104C1A9F8727B82DDA /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD4DE1685B5DD1EF30B22B9E2937C98 /* JSONModel+networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EACB87864C8C39665914D4AA4916969 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C942B6C82E9EE8CB85B756B7F14EBC /* LMGeocoder.m */; };
+		22393F966C86D2067CD54102476F16B3 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDA8A21E0D28D2AC2290DB72CF11FA5 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24142FBDBE77D22994D7BAB19767D94F /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7586ACBCDD510092D2E27AEE5D60F2CC /* AFNetworking-dummy.m */; };
+		2611E5599EF9C7A99DF61AFD411F699D /* KFOWMWindModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A865FD0C4685B36B8A91F0F6F1EE22 /* KFOWMWindModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A553620AC8F5D38361170749059B3C2 /* KFOpenWeatherMapAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D235CA2CBC8BF51A26F0175F942B7C /* KFOpenWeatherMapAPI-dummy.m */; };
+		31C9CF5AF03B0109850A0300A01038CD /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A84C276BBA884C0803FC483BAD534B7 /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32280D46C4F3DD4EA6E645B3CFF7B1DB /* KFOWMCloudModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB29589B538CE3E5F6FEC74197289CC /* KFOWMCloudModel.m */; };
+		322C79F534E7AF2254D5F9C07A69CECA /* KFOWMForecastResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0332DC83475582A6BFD5BB86276142 /* KFOWMForecastResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32F154E584E72117A0258C8ABB752F40 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE93B6E8CDFF9847C903DEB2C1FD003 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		33E6908FF47D932FB3F225D573B93E2A /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D75BDE7ABB435637149DF8FB1DC8ADED /* AFJSONRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36AF5FD414EE93F0C9250394B9B920BC /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1DB3D5C76FE4D3C084A40E918A4F06 /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3793E80A2662B3C68894E614E93B3DC1 /* KFOWMForecastResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 241B87546EFF2D4FB6E3FBAA784A2869 /* KFOWMForecastResponseModel.m */; };
+		387C47199D0E566DCD7DA228B20297C5 /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE44C6872C0A2EF214D8CC8934ADADC /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DCEF31E6E3DD839BBA09660EC45E04D /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B30F90D979FDE73F37B1B7649D954 /* JSONModelArray.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		40F06B5313CED91D5D419E5D8C1BC36C /* KFOWMForecastTemperatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EABFC663487EEDA2E24064D20683B6 /* KFOWMForecastTemperatureModel.m */; };
+		4147474001D36CCC7D34CB1F57852ADF /* KFOWMForecastListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4C9E2745D4C88BDBC53D9C052DEDA1 /* KFOWMForecastListModel.m */; };
+		44CDB76FA42E353D69336EBB1A0CF8D9 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ADB2473DCC203A3DDF6B590B5BAF7 /* NSArray+JSONModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		456A8E7D316D23C62758B8B25F555787 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 905DC9C8C53A4480F454DB4F5F79115A /* JSONModel+networking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		45D76A504C9948C36C622D1F97257795 /* Pods-WheatherForcast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D980706C5D7E6FC28F397E3B11F6BB /* Pods-WheatherForcast-dummy.m */; };
+		46780AD6D6A5361FF7C4338CEE1C191A /* KFOWMCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA0C3A2A6AE9EB406642A7385B9971 /* KFOWMCityModel.m */; };
+		5204FEF7B1F7087B004562E932FC417C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A7C0B6179467051ED95E59DB2AF9F /* SystemConfiguration.framework */; };
+		52664D4A949F2ECEF8713CFE55092A5A /* KFOpenWeatherMapAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 19544FCB5EA975BABE761C37DBA6513E /* KFOpenWeatherMapAPIClient.m */; };
+		53707C8E9063630510F1E6A36275BC33 /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DBF79556943B5F224CBE1BF111D6F6 /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5431396EC4CB6389B4184740D5968698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		565FB03530FE821E43ADF6A4A5871222 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F6BB588BA91DA1B58759C08603CA3D /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		59E5E0BBCA2E2AF4CDA0F6BA1DF44B67 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FDBCCB266ACFED93E55656FD8A014C /* MobileCoreServices.framework */; };
+		5F3E45D44392E55DC395DEE05B7B7570 /* JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5314FFF401F487E1ECD61831DDE6997 /* JSONModel-dummy.m */; };
+		6111F72B4180CEC3FAB0C50010139DA9 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F8529C9B625608180DCAD71DD7C83C /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61CA165577F69AA834F6800FCB8D459D /* KFOWMDailyForecastResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFABE8C31A89A2B8083E7BE825E095B7 /* KFOWMDailyForecastResponseModel.m */; };
+		6648F8F14B77023B260088848F48A8AC /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C75F54B30DC2EBCA051893406A800E3D /* AFPropertyListRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AD6C2328F40861EEF11420AB665B08B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB6DA7119E827247BFF1F20CDE3863 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6AE140DBD03B9725598CE9C11354D160 /* KFOWMWeatherResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E02A9BE1EF4C426B6C3BF8E833E7A45 /* KFOWMWeatherResponseModel.m */; };
+		6D7E94149EB666FC74571196E35E1BF2 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC82279AD99E74F43182D0193B66987 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		799551E312F37C3D0F3121BC83B8185E /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C1401A962A59EE25EDE60FA3EA3D0 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		811B9C435CDAB32D24E1A7B69F138724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		89EBB6183F302416C109B3097BC9CE92 /* JSONValueTransformer+Timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF53BCCBE5ED8869D62AC2C3AE7D2F8 /* JSONValueTransformer+Timestamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BEC397554CA8CD1CD24788EEBDFA568 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBCC1BC09B14F9B4A96B04C16BD1AA /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8E9B999351C774D9EB234C2832C012F5 /* KFOWMForecastTemperatureModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D76D39631123932ABB2CA7BDBDADAD1 /* KFOWMForecastTemperatureModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F268BA80956D4B6D8E13AB6CFC4DB6 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E265116A818BBF585A62CD5DFDCC345A /* JSONKeyMapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		95191F339F7D1B731511FD0296A6B50C /* KFOWMForecastListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C0751F887B0D3BD0E48335DB4E75BB /* KFOWMForecastListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		988C84FC5CDFF45926D238C0ADF0E470 /* JSONModelArray.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEC88D5E919E10373CE4C5BC0C75CE9 /* JSONModelArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CBE3670CE57044EDA1153A9780003DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		A1445560417E2DB5C69F9556DA2B6509 /* KFOWMCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C600A10DC6F7F25FED7116B5E32193 /* KFOWMCoordinateModel.m */; };
+		A1D2BB6B397C6C5C60A4B6FC79AAD405 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 38687B7736F660D8A05D66F748A8C94C /* JSONHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A96BD8584A7477D6C88E0DED371EDCB1 /* KFOWMWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 556EA1D9C4F83534F95DD05CE100B3A1 /* KFOWMWeatherModel.m */; };
+		AAF5013EFFA9A11458C586555138DB05 /* JSONValueTransformer+Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A85BDC7153CCCD4E344F80FFA4025D1 /* JSONValueTransformer+Timestamp.m */; };
+		AB27A902079511202ADA05AE4AD012EA /* KFOWMRainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BFDEF460E2BF3343F16CB23A9B1F1C /* KFOWMRainModel.m */; };
+		AC30ECA59AB370965BF88E55D5F20CDE /* KFOWMSystemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A6195C50AC8F1236CBC145A28F01CE9F /* KFOWMSystemModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE38EDDE9CC4AE575A60F79675BAA7C9 /* KFOWMMainWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F4438C1DBEC63E5059DEE8DC6E8700 /* KFOWMMainWeatherModel.m */; };
+		B13BDB58CA5397991504C08A029925C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		B26AB43675FA80DECDC9F73571DDC402 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB530DC0F026E3AFA56D55F03A217E1 /* JSONModelClassProperty.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B56F12ACBDB965EDDF72C1D1FD171782 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A75934D382E83A49DB9D57EAB4E623 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5AB7A0466D7412227E4EFBCAB94122E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A9374C39A6EFA90AD3F2E64799ECC5 /* Security.framework */; };
+		B670CADA1417E9F7A384682817FD8BEB /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C3080C1767023D43AA139C4CDC881189 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BBE990F3FF07D91918D1E8FF27EB8D5B /* KFOWMCityModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 151352CB2E60D60F94885220C72D900A /* KFOWMCityModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCF6F1CD270BA9BC5BDC63815D818097 /* NSArray+JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E1A33ABB06A53CC1E3BE92EB7E72F2 /* NSArray+JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1652FEE07EE48DC7277B180CACFABC8 /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DEADD0403DB3763EFA8B3D361CAB9B /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C24A23E75AF06E93870635DA070FCAC2 /* KFOWMDailyForecastResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F3467C23AA3F327D4B794F8ED53A79 /* KFOWMDailyForecastResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3D7006A3FE52DF27863524D4836729D /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CCEC30966222293D0E8AAE5538284B6D /* AFXMLRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5B804D74B774F7313ACDDAD3471D546 /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FD12FDAE945897B87157ED95945443 /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF8CE48F04279993E81002AA7F9CF4F0 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A2DD14E1744CC00F0ED34118A54CD1 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4A6D3C50432CF200A1EFED246747895 /* KFOWMSearchResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 173E659BC36F96808398B2418B56FFB2 /* KFOWMSearchResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D56AFE13028BEDDEDFF41A53DBA580EE /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 067DA82746CFE60354365C1FBD745261 /* JSONValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D72B220D274E3735A01C91E274B45E5B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A76F6AFD7E6C1F794A9F7071B1D2BC /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D8CAE22C90885CEA8AF63B67C9678D4F /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C6352B2BE8BE1C83313A004AE3467AAB /* AFImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E07D90527BB10F6255468E979D0A4063 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F176DA797FFF032D1A91D242DF48B93 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0C74194933EA562ECF4A44FAC85A379 /* KFOWMMainWeatherModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A19C8637203F93BE2ECFDAD8C9661B4 /* KFOWMMainWeatherModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E18447B7ECAD300995CBD10A7DE48EC2 /* KFOWMCoordinateModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 43FF44D01AB237F651A06307259E46C6 /* KFOWMCoordinateModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2B860781E32683F1D789883AF496BBF /* KFOWMWindModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FF4F25A0FEA06FFD1B334DEE41F85 /* KFOWMWindModel.m */; };
+		E5C081A06FE7881EB4065EA6730997E9 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FCF3A5BEED8B8A28B7B5598A7DBCD /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E87474E33986D162D0953305A6360854 /* KFOWMRainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D012D8D3CFA67947FD4F8A6E1B58C60 /* KFOWMRainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA053F9B23C253858CEAA376206FE168 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5230ED9B087587EA84459BC30F759A1F /* JSONModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EAC8D21ABBCC7BEDBE2DEE1B4BDF19BE /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A26A956EB76F8B183CBF21D782E9472 /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EADC99D5FD5FE23AE4A43991C14FBFDE /* KFOWMCloudModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A448133045AD6CDB38FAA6525F4FEBE3 /* KFOWMCloudModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1DC1250EE191671DFBF8B7F4D31845 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		ECDC53EFCB560E7B999CB0EA5220ECD3 /* KFOWMDailyForecastListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D2525EC567BE01C7EF95F003C43F2947 /* KFOWMDailyForecastListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA63AF694E3FFBA6D96F73A5B33E8EB /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 746DAFF69065DE5EA2AC65E001B1179C /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE46BF183470777F57FB145189B95129 /* KFOWMDailyForecastListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 801A7BE758D8A8701A2D6D96909A3D52 /* KFOWMDailyForecastListModel.m */; };
+		F063A6F1B668CEE2FCB96DFC263E3EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
+		F12A8A3BABDBD3966DDF5202D9A6BF14 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB559CD1906CA0424E0CBFB24E418CB /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F471FDA23F7A8F3E0DF4B681CA898FA5 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DE86EDC8FC52D1E959D6409873EAB0A6 /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF03ABF43E3D8E792CE054C4128D582A /* LMGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5D29EBF8875523FB5F3FD11F92CFE /* LMGeocoder-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC356E036C61569F68B038310EC3013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF39EC626DDEB4954AB88832ACEF757;
+			remoteInfo = AFNetworking;
+		};
+		38E46BE9533221B3FA46F8AA135A68EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53E7E9D15B3EFBCB998E237DE5EA8695;
+			remoteInfo = JSONModel;
+		};
+		62E0CB81AF9DE9F28070B70F8FBBD33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5431FA9F9CD15DE125C2E16335866233;
+			remoteInfo = LMGeocoder;
+		};
+		8013DD78011E2EC6C828F64DECC2F613 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53E7E9D15B3EFBCB998E237DE5EA8695;
+			remoteInfo = JSONModel;
+		};
+		C8680B368EF74E0B306AD4FBE69F38BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5125A176778E9AA1E709C18E7E5EFBE6;
+			remoteInfo = KFOpenWeatherMapAPI;
+		};
+		E2ADCB6AFDC2D22863DBDD7C0C44FAC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF39EC626DDEB4954AB88832ACEF757;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F3467C23AA3F327D4B794F8ED53A79 /* KFOWMDailyForecastResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMDailyForecastResponseModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMDailyForecastResponseModel.h; sourceTree = "<group>"; };
+		03DEADD0403DB3763EFA8B3D361CAB9B /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
+		063D8B975F2792019DC5B5FF7B5E1F03 /* Pods-WheatherForcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WheatherForcast.debug.xcconfig"; sourceTree = "<group>"; };
+		066DDA671BA2332E390C698FC63EC5A8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		067DA82746CFE60354365C1FBD745261 /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
+		08FD12FDAE945897B87157ED95945443 /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
+		0D76D39631123932ABB2CA7BDBDADAD1 /* KFOWMForecastTemperatureModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMForecastTemperatureModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMForecastTemperatureModel.h; sourceTree = "<group>"; };
+		0EBA0C3A2A6AE9EB406642A7385B9971 /* KFOWMCityModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMCityModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMCityModel.m; sourceTree = "<group>"; };
+		12A9374C39A6EFA90AD3F2E64799ECC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		13C600A10DC6F7F25FED7116B5E32193 /* KFOWMCoordinateModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMCoordinateModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMCoordinateModel.m; sourceTree = "<group>"; };
+		14E1A33ABB06A53CC1E3BE92EB7E72F2 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+JSONModel.h"; path = "JSONModel/JSONModelCategories/NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		150D902C8D5AAC1699BF42DA6732B4A3 /* Pods-WheatherForcast-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WheatherForcast-frameworks.sh"; sourceTree = "<group>"; };
+		151352CB2E60D60F94885220C72D900A /* KFOWMCityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMCityModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMCityModel.h; sourceTree = "<group>"; };
+		16FF796AE371FEF74EF22FFDCC8014EF /* LMGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMGeocoder.xcconfig; sourceTree = "<group>"; };
+		171261252C84DC63B2840BDC0E38AC9F /* libPods-WheatherForcastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WheatherForcastTests.a"; path = "libPods-WheatherForcastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		173E659BC36F96808398B2418B56FFB2 /* KFOWMSearchResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMSearchResponseModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMSearchResponseModel.h; sourceTree = "<group>"; };
+		19544FCB5EA975BABE761C37DBA6513E /* KFOpenWeatherMapAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOpenWeatherMapAPIClient.m; path = KFOpenWeatherMapAPI/Source/KFOpenWeatherMapAPIClient.m; sourceTree = "<group>"; };
+		1CF53BCCBE5ED8869D62AC2C3AE7D2F8 /* JSONValueTransformer+Timestamp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONValueTransformer+Timestamp.h"; path = "KFOpenWeatherMapAPI/Source/Categories/JSONValueTransformer+Timestamp.h"; sourceTree = "<group>"; };
+		20BFDEF460E2BF3343F16CB23A9B1F1C /* KFOWMRainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMRainModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMRainModel.m; sourceTree = "<group>"; };
+		241B87546EFF2D4FB6E3FBAA784A2869 /* KFOWMForecastResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMForecastResponseModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMForecastResponseModel.m; sourceTree = "<group>"; };
+		2A6E5BEEEBC664E3613D06D41D768EB9 /* Pods-WheatherForcastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WheatherForcastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B0332DC83475582A6BFD5BB86276142 /* KFOWMForecastResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMForecastResponseModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMForecastResponseModel.h; sourceTree = "<group>"; };
+		2BB29589B538CE3E5F6FEC74197289CC /* KFOWMCloudModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMCloudModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMCloudModel.m; sourceTree = "<group>"; };
+		2BFBCC1BC09B14F9B4A96B04C16BD1AA /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		30A75934D382E83A49DB9D57EAB4E623 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		35DBF79556943B5F224CBE1BF111D6F6 /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = JSONModel/JSONModelNetworking/JSONAPI.h; sourceTree = "<group>"; };
+		38687B7736F660D8A05D66F748A8C94C /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
+		3A19C8637203F93BE2ECFDAD8C9661B4 /* KFOWMMainWeatherModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMMainWeatherModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMMainWeatherModel.h; sourceTree = "<group>"; };
+		43FF44D01AB237F651A06307259E46C6 /* KFOWMCoordinateModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMCoordinateModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMCoordinateModel.h; sourceTree = "<group>"; };
+		45BB2FDB7A8CBD8D8CC1C81424FD5A7E /* Pods-WheatherForcast-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WheatherForcast-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49EABFC663487EEDA2E24064D20683B6 /* KFOWMForecastTemperatureModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMForecastTemperatureModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMForecastTemperatureModel.m; sourceTree = "<group>"; };
+		4A0FCF3A5BEED8B8A28B7B5598A7DBCD /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		4A26A956EB76F8B183CBF21D782E9472 /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
+		4BB5D29EBF8875523FB5F3FD11F92CFE /* LMGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMGeocoder-dummy.m"; sourceTree = "<group>"; };
+		4BDA8A21E0D28D2AC2290DB72CF11FA5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		4EDB6DA7119E827247BFF1F20CDE3863 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		5230ED9B087587EA84459BC30F759A1F /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
+		52953685B742D1963DC6D9CFD781C59A /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		556EA1D9C4F83534F95DD05CE100B3A1 /* KFOWMWeatherModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMWeatherModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMWeatherModel.m; sourceTree = "<group>"; };
+		55A83D8743B94AA89131039EBF0427A4 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		56C0751F887B0D3BD0E48335DB4E75BB /* KFOWMForecastListModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMForecastListModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMForecastListModel.h; sourceTree = "<group>"; };
+		593650673645B40D01FB2991640A6DBF /* Pods-WheatherForcastUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WheatherForcastUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B6C1401A962A59EE25EDE60FA3EA3D0 /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
+		5E98BBF770C1BE00691A0487B943D641 /* Pods-WheatherForcastTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WheatherForcastTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		619D32A63E6E33970AEC5A82361A45F0 /* Pods-WheatherForcastTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WheatherForcastTests-dummy.m"; sourceTree = "<group>"; };
+		62914EA042790A68D6AC9D29C2DE6179 /* Pods-WheatherForcastTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WheatherForcastTests-resources.sh"; sourceTree = "<group>"; };
+		635B30F90D979FDE73F37B1B7649D954 /* JSONModelArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelArray.m; path = JSONModel/JSONModel/JSONModelArray.m; sourceTree = "<group>"; };
+		685CADCCBF72269B69CB5E1F08E57FAB /* Pods-WheatherForcastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WheatherForcastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CB530DC0F026E3AFA56D55F03A217E1 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
+		70CA4BF61EF528FA268691083F32A42F /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		7156F4FAF4FAED05EA1FF9CA619CB4C8 /* Pods-WheatherForcastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WheatherForcastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		717EB7A121C6B975F9A73DF2EF8B0CB4 /* libKFOpenWeatherMapAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKFOpenWeatherMapAPI.a; path = libKFOpenWeatherMapAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		746DAFF69065DE5EA2AC65E001B1179C /* LMGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMGeocoder.h; path = LMGeocoder/LMGeocoder.h; sourceTree = "<group>"; };
+		7586ACBCDD510092D2E27AEE5D60F2CC /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		77A2DFD4E0040AB1DC928914F0C0308A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		7845783308DE906523EDD40C1F387545 /* Pods-WheatherForcastTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WheatherForcastTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		801A7BE758D8A8701A2D6D96909A3D52 /* KFOWMDailyForecastListModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMDailyForecastListModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMDailyForecastListModel.m; sourceTree = "<group>"; };
+		80A865FD0C4685B36B8A91F0F6F1EE22 /* KFOWMWindModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMWindModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMWindModel.h; sourceTree = "<group>"; };
+		82AAE8441BDA04032A68363F8BFC4416 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
+		82F4438C1DBEC63E5059DEE8DC6E8700 /* KFOWMMainWeatherModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMMainWeatherModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMMainWeatherModel.m; sourceTree = "<group>"; };
+		85F7CF3695320CDB054A2B603E974142 /* Pods-WheatherForcastUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WheatherForcastUITests-dummy.m"; sourceTree = "<group>"; };
+		89104AC356F34E12733D170ACDA06A35 /* Pods-WheatherForcast-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WheatherForcast-acknowledgements.plist"; sourceTree = "<group>"; };
+		893FF4F25A0FEA06FFD1B334DEE41F85 /* KFOWMWindModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMWindModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMWindModel.m; sourceTree = "<group>"; };
+		8A84C276BBA884C0803FC483BAD534B7 /* LMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAddress.h; path = LMGeocoder/LMAddress.h; sourceTree = "<group>"; };
+		8A85BDC7153CCCD4E344F80FFA4025D1 /* JSONValueTransformer+Timestamp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONValueTransformer+Timestamp.m"; path = "KFOpenWeatherMapAPI/Source/Categories/JSONValueTransformer+Timestamp.m"; sourceTree = "<group>"; };
+		905DC9C8C53A4480F454DB4F5F79115A /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
+		910EF855B11EB79072051C7676322FBA /* JSONModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95D235CA2CBC8BF51A26F0175F942B7C /* KFOpenWeatherMapAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KFOpenWeatherMapAPI-dummy.m"; sourceTree = "<group>"; };
+		9A2ADB2473DCC203A3DDF6B590B5BAF7 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+JSONModel.m"; path = "JSONModel/JSONModelCategories/NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		9CF32931640DD52E6D5A9E2E47454AF0 /* LMGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMGeocoder-prefix.pch"; sourceTree = "<group>"; };
+		9D012D8D3CFA67947FD4F8A6E1B58C60 /* KFOWMRainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMRainModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMRainModel.h; sourceTree = "<group>"; };
+		9E02A9BE1EF4C426B6C3BF8E833E7A45 /* KFOWMWeatherResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMWeatherResponseModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMWeatherResponseModel.m; sourceTree = "<group>"; };
+		9F176DA797FFF032D1A91D242DF48B93 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A01094F6D0BCEF93AB6EC17AC8C7608C /* libLMGeocoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLMGeocoder.a; path = libLMGeocoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A069A11C1D0F7A7F3AFDB6152477F85E /* LMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAddress.m; path = LMGeocoder/LMAddress.m; sourceTree = "<group>"; };
+		A448133045AD6CDB38FAA6525F4FEBE3 /* KFOWMCloudModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMCloudModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMCloudModel.h; sourceTree = "<group>"; };
+		A6195C50AC8F1236CBC145A28F01CE9F /* KFOWMSystemModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMSystemModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMSystemModel.h; sourceTree = "<group>"; };
+		A64716173FC0305057230E14CDCC7A77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A6C942B6C82E9EE8CB85B756B7F14EBC /* LMGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMGeocoder.m; path = LMGeocoder/LMGeocoder.m; sourceTree = "<group>"; };
+		A703B25CD16B32AD0D58D5B9F6E1B07F /* KFOpenWeatherMapAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOpenWeatherMapAPIClient.h; path = KFOpenWeatherMapAPI/Source/KFOpenWeatherMapAPIClient.h; sourceTree = "<group>"; };
+		AA1DB3D5C76FE4D3C084A40E918A4F06 /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
+		ABC82279AD99E74F43182D0193B66987 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		ACC5A0EF290336FB638973DEB3E66254 /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
+		ADD4DE1685B5DD1EF30B22B9E2937C98 /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
+		AEB137D9D0A0307AE6C68778B81EE720 /* JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONModel-prefix.pch"; sourceTree = "<group>"; };
+		B0F8529C9B625608180DCAD71DD7C83C /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		B85C1FAA2A5B55B711E12293A051E6C3 /* Pods-WheatherForcastUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WheatherForcastUITests-resources.sh"; sourceTree = "<group>"; };
+		B93C008276BA3B762513468097667F3A /* KFOWMSystemModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMSystemModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMSystemModel.m; sourceTree = "<group>"; };
+		B9A2DD14E1744CC00F0ED34118A54CD1 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		B9C3239F4FE85B5B6B286D970062337F /* Pods-WheatherForcastUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WheatherForcastUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B9EE1E16CF6F5DBB8DD8885A8A68A5DF /* Pods-WheatherForcastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WheatherForcastTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9FDBCCB266ACFED93E55656FD8A014C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		BB58F08BBCA411EF3E09B07AFBA56296 /* Pods-WheatherForcastUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WheatherForcastUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C15090C315F539A1FEF93B50F073EC08 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		C1D980706C5D7E6FC28F397E3B11F6BB /* Pods-WheatherForcast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WheatherForcast-dummy.m"; sourceTree = "<group>"; };
+		C2A76F6AFD7E6C1F794A9F7071B1D2BC /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		C3080C1767023D43AA139C4CDC881189 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		C6352B2BE8BE1C83313A004AE3467AAB /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		C75F54B30DC2EBCA051893406A800E3D /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		C8F6BB588BA91DA1B58759C08603CA3D /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		CCEC30966222293D0E8AAE5538284B6D /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		CD4AC0EC87EF2AF38F919AD72130685E /* Pods-WheatherForcast-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WheatherForcast-resources.sh"; sourceTree = "<group>"; };
+		CFABE8C31A89A2B8083E7BE825E095B7 /* KFOWMDailyForecastResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMDailyForecastResponseModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMDailyForecastResponseModel.m; sourceTree = "<group>"; };
+		CFE93B6E8CDFF9847C903DEB2C1FD003 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		D0453CCAB7A430C352516250546D2C04 /* KFOWMWeatherModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMWeatherModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMWeatherModel.h; sourceTree = "<group>"; };
+		D1E26A31BC2A9154099EB5AF1249B2CD /* KFOWMWeatherResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMWeatherResponseModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMWeatherResponseModel.h; sourceTree = "<group>"; };
+		D2525EC567BE01C7EF95F003C43F2947 /* KFOWMDailyForecastListModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KFOWMDailyForecastListModel.h; path = KFOpenWeatherMapAPI/Source/Models/KFOWMDailyForecastListModel.h; sourceTree = "<group>"; };
+		D5314FFF401F487E1ECD61831DDE6997 /* JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONModel-dummy.m"; sourceTree = "<group>"; };
+		D654B11858D5550182CC78425BC82955 /* libPods-WheatherForcastUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WheatherForcastUITests.a"; path = "libPods-WheatherForcastUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75BDE7ABB435637149DF8FB1DC8ADED /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		D870D16980293F66633116687F895EE3 /* Pods-WheatherForcastTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WheatherForcastTests-frameworks.sh"; sourceTree = "<group>"; };
+		D9B7E694F9FC4797AE152F09D9672B84 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		DC90C1E276148E52DA17CCC66E5FEC46 /* Pods-WheatherForcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WheatherForcast.release.xcconfig"; sourceTree = "<group>"; };
+		DE86EDC8FC52D1E959D6409873EAB0A6 /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
+		DEE44C6872C0A2EF214D8CC8934ADADC /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = JSONModel/JSONModel/JSONModelClassProperty.h; sourceTree = "<group>"; };
+		E18B19D7A7A553E642AFC923591402EF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		E265116A818BBF585A62CD5DFDCC345A /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
+		EA78E216363547F6E7CF999727F25CE0 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		EAEC88D5E919E10373CE4C5BC0C75CE9 /* JSONModelArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelArray.h; path = JSONModel/JSONModel/JSONModelArray.h; sourceTree = "<group>"; };
+		EBF3D9C434615BBBEFCC2E7C14D0B9B4 /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
+		EC8A7C0B6179467051ED95E59DB2AF9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F0109EAF00EDFE6E3106AA1527CE2D5C /* KFOpenWeatherMapAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KFOpenWeatherMapAPI.xcconfig; sourceTree = "<group>"; };
+		F5512C8D5CAAC865AEC8BE305C61E31A /* libPods-WheatherForcast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WheatherForcast.a"; path = "libPods-WheatherForcast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FA799F7F4D06D41FF671B68DCFDF8616 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJSONModel.a; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB123C7580125CAD87194F176C3660F8 /* KFOpenWeatherMapAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFOpenWeatherMapAPI-prefix.pch"; sourceTree = "<group>"; };
+		FBAD828F5E868D0C16CCFB22AF71BCBF /* KFOWMSearchResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMSearchResponseModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMSearchResponseModel.m; sourceTree = "<group>"; };
+		FCB559CD1906CA0424E0CBFB24E418CB /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
+		FD4C9E2745D4C88BDBC53D9C052DEDA1 /* KFOWMForecastListModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KFOWMForecastListModel.m; path = KFOpenWeatherMapAPI/Source/Models/KFOWMForecastListModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A2DABCF7A4BA4F7EF8BFB1E79FC53DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBE3670CE57044EDA1153A9780003DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FB590ABF2F6F2A2B439BB73B9483286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1DC1250EE191671DFBF8B7F4D31845 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3033D2C9808B1016F791AED0C3F411DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015E4F5614576ED875180109774643B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C49F22667C2C7B133100925E0E13917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13BDB58CA5397991504C08A029925C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E64D37C46C3321C82E64C9E7780CBEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F063A6F1B668CEE2FCB96DFC263E3EF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD9C2E71BEC8C2C28265B8F5556FF2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811B9C435CDAB32D24E1A7B69F138724 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A182936A346E2F35813B44020E59739B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4B6766BADE27F473740297FF9FD17E /* CoreGraphics.framework in Frameworks */,
+				5431396EC4CB6389B4184740D5968698 /* Foundation.framework in Frameworks */,
+				59E5E0BBCA2E2AF4CDA0F6BA1DF44B67 /* MobileCoreServices.framework in Frameworks */,
+				B5AB7A0466D7412227E4EFBCAB94122E /* Security.framework in Frameworks */,
+				5204FEF7B1F7087B004562E932FC417C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B2926C49AEBAD405BD6C995FECED67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18B19D7A7A553E642AFC923591402EF /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15506366B2802423CAAF12455A6FE269 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				653C1F338551D38655FA5CECDF0CFA08 /* Pods-WheatherForcast */,
+				8EBBABA2570F7120260C3D2F70919196 /* Pods-WheatherForcastTests */,
+				DFB754E51EC55A91A1B7A2C6970E89A3 /* Pods-WheatherForcastUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1FFC3D20A07271E5C2674F14A03A6026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50D7C0CF0A02E9FAA6FF6CA7CB154BD1 /* AFNetworking */,
+				F81F6800874DBDA6EE4ACD60643AA3A8 /* GoogleMaps */,
+				F66475B01E2EEBA78A8E20580806C58E /* GooglePlaces */,
+				591AF4D7C3E00B7D4A12F30E88A7E8A0 /* JSONModel */,
+				92A243A9AF51DA134F0701D4DF9DA562 /* KFOpenWeatherMapAPI */,
+				D979AC384DC8CF955F7F181E7F160B1E /* LMGeocoder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB79318D3E8AF2183319FF8098C5AE5E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28352869E7D18FCC97E30A0B356CD010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70CA4BF61EF528FA268691083F32A42F /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488C58DEFDD34E025D744F493965ED12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16FF796AE371FEF74EF22FFDCC8014EF /* LMGeocoder.xcconfig */,
+				4BB5D29EBF8875523FB5F3FD11F92CFE /* LMGeocoder-dummy.m */,
+				9CF32931640DD52E6D5A9E2E47454AF0 /* LMGeocoder-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LMGeocoder";
+			sourceTree = "<group>";
+		};
+		503FA212ACBC254EBAC7C1ECEF488E44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9B7E694F9FC4797AE152F09D9672B84 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		50D7C0CF0A02E9FAA6FF6CA7CB154BD1 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FCB559CD1906CA0424E0CBFB24E418CB /* AFHTTPClient.h */,
+				5B6C1401A962A59EE25EDE60FA3EA3D0 /* AFHTTPClient.m */,
+				4BDA8A21E0D28D2AC2290DB72CF11FA5 /* AFHTTPRequestOperation.h */,
+				4EDB6DA7119E827247BFF1F20CDE3863 /* AFHTTPRequestOperation.m */,
+				C6352B2BE8BE1C83313A004AE3467AAB /* AFImageRequestOperation.h */,
+				C8F6BB588BA91DA1B58759C08603CA3D /* AFImageRequestOperation.m */,
+				D75BDE7ABB435637149DF8FB1DC8ADED /* AFJSONRequestOperation.h */,
+				CFE93B6E8CDFF9847C903DEB2C1FD003 /* AFJSONRequestOperation.m */,
+				30A75934D382E83A49DB9D57EAB4E623 /* AFNetworkActivityIndicatorManager.h */,
+				C2A76F6AFD7E6C1F794A9F7071B1D2BC /* AFNetworkActivityIndicatorManager.m */,
+				B0F8529C9B625608180DCAD71DD7C83C /* AFNetworking.h */,
+				C75F54B30DC2EBCA051893406A800E3D /* AFPropertyListRequestOperation.h */,
+				2BFBCC1BC09B14F9B4A96B04C16BD1AA /* AFPropertyListRequestOperation.m */,
+				9F176DA797FFF032D1A91D242DF48B93 /* AFURLConnectionOperation.h */,
+				C3080C1767023D43AA139C4CDC881189 /* AFURLConnectionOperation.m */,
+				CCEC30966222293D0E8AAE5538284B6D /* AFXMLRequestOperation.h */,
+				4A0FCF3A5BEED8B8A28B7B5598A7DBCD /* AFXMLRequestOperation.m */,
+				B9A2DD14E1744CC00F0ED34118A54CD1 /* UIImageView+AFNetworking.h */,
+				ABC82279AD99E74F43182D0193B66987 /* UIImageView+AFNetworking.m */,
+				8C048073ADB62880ABE15E7D0F86A9A5 /* Support Files */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		551CAC072B0246C5F82AFDD4B62B003B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				066DDA671BA2332E390C698FC63EC5A8 /* libAFNetworking.a */,
+				FA799F7F4D06D41FF671B68DCFDF8616 /* libJSONModel.a */,
+				717EB7A121C6B975F9A73DF2EF8B0CB4 /* libKFOpenWeatherMapAPI.a */,
+				A01094F6D0BCEF93AB6EC17AC8C7608C /* libLMGeocoder.a */,
+				F5512C8D5CAAC865AEC8BE305C61E31A /* libPods-WheatherForcast.a */,
+				171261252C84DC63B2840BDC0E38AC9F /* libPods-WheatherForcastTests.a */,
+				D654B11858D5550182CC78425BC82955 /* libPods-WheatherForcastUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		591AF4D7C3E00B7D4A12F30E88A7E8A0 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				35DBF79556943B5F224CBE1BF111D6F6 /* JSONAPI.h */,
+				EBF3D9C434615BBBEFCC2E7C14D0B9B4 /* JSONAPI.m */,
+				08FD12FDAE945897B87157ED95945443 /* JSONHTTPClient.h */,
+				38687B7736F660D8A05D66F748A8C94C /* JSONHTTPClient.m */,
+				03DEADD0403DB3763EFA8B3D361CAB9B /* JSONKeyMapper.h */,
+				E265116A818BBF585A62CD5DFDCC345A /* JSONKeyMapper.m */,
+				DE86EDC8FC52D1E959D6409873EAB0A6 /* JSONModel.h */,
+				5230ED9B087587EA84459BC30F759A1F /* JSONModel.m */,
+				ADD4DE1685B5DD1EF30B22B9E2937C98 /* JSONModel+networking.h */,
+				905DC9C8C53A4480F454DB4F5F79115A /* JSONModel+networking.m */,
+				EAEC88D5E919E10373CE4C5BC0C75CE9 /* JSONModelArray.h */,
+				635B30F90D979FDE73F37B1B7649D954 /* JSONModelArray.m */,
+				DEE44C6872C0A2EF214D8CC8934ADADC /* JSONModelClassProperty.h */,
+				6CB530DC0F026E3AFA56D55F03A217E1 /* JSONModelClassProperty.m */,
+				4A26A956EB76F8B183CBF21D782E9472 /* JSONModelError.h */,
+				ACC5A0EF290336FB638973DEB3E66254 /* JSONModelError.m */,
+				82AAE8441BDA04032A68363F8BFC4416 /* JSONModelLib.h */,
+				AA1DB3D5C76FE4D3C084A40E918A4F06 /* JSONValueTransformer.h */,
+				067DA82746CFE60354365C1FBD745261 /* JSONValueTransformer.m */,
+				14E1A33ABB06A53CC1E3BE92EB7E72F2 /* NSArray+JSONModel.h */,
+				9A2ADB2473DCC203A3DDF6B590B5BAF7 /* NSArray+JSONModel.m */,
+				91FFB711DCB51D90BA9B6565BFA1674B /* Support Files */,
+			);
+			name = JSONModel;
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		6001B325111B54237CA08CA00E7FF934 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				13B2926C49AEBAD405BD6C995FECED67 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		653C1F338551D38655FA5CECDF0CFA08 /* Pods-WheatherForcast */ = {
+			isa = PBXGroup;
+			children = (
+				45BB2FDB7A8CBD8D8CC1C81424FD5A7E /* Pods-WheatherForcast-acknowledgements.markdown */,
+				89104AC356F34E12733D170ACDA06A35 /* Pods-WheatherForcast-acknowledgements.plist */,
+				C1D980706C5D7E6FC28F397E3B11F6BB /* Pods-WheatherForcast-dummy.m */,
+				150D902C8D5AAC1699BF42DA6732B4A3 /* Pods-WheatherForcast-frameworks.sh */,
+				CD4AC0EC87EF2AF38F919AD72130685E /* Pods-WheatherForcast-resources.sh */,
+				063D8B975F2792019DC5B5FF7B5E1F03 /* Pods-WheatherForcast.debug.xcconfig */,
+				DC90C1E276148E52DA17CCC66E5FEC46 /* Pods-WheatherForcast.release.xcconfig */,
+			);
+			name = "Pods-WheatherForcast";
+			path = "Target Support Files/Pods-WheatherForcast";
+			sourceTree = "<group>";
+		};
+		7B9659F0957573CE62465F4EAC3AC0BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0109EAF00EDFE6E3106AA1527CE2D5C /* KFOpenWeatherMapAPI.xcconfig */,
+				95D235CA2CBC8BF51A26F0175F942B7C /* KFOpenWeatherMapAPI-dummy.m */,
+				FB123C7580125CAD87194F176C3660F8 /* KFOpenWeatherMapAPI-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KFOpenWeatherMapAPI";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				1FFC3D20A07271E5C2674F14A03A6026 /* Pods */,
+				551CAC072B0246C5F82AFDD4B62B003B /* Products */,
+				15506366B2802423CAAF12455A6FE269 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C048073ADB62880ABE15E7D0F86A9A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52953685B742D1963DC6D9CFD781C59A /* AFNetworking.xcconfig */,
+				7586ACBCDD510092D2E27AEE5D60F2CC /* AFNetworking-dummy.m */,
+				55A83D8743B94AA89131039EBF0427A4 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		8EBBABA2570F7120260C3D2F70919196 /* Pods-WheatherForcastTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E98BBF770C1BE00691A0487B943D641 /* Pods-WheatherForcastTests-acknowledgements.markdown */,
+				7845783308DE906523EDD40C1F387545 /* Pods-WheatherForcastTests-acknowledgements.plist */,
+				619D32A63E6E33970AEC5A82361A45F0 /* Pods-WheatherForcastTests-dummy.m */,
+				D870D16980293F66633116687F895EE3 /* Pods-WheatherForcastTests-frameworks.sh */,
+				62914EA042790A68D6AC9D29C2DE6179 /* Pods-WheatherForcastTests-resources.sh */,
+				2A6E5BEEEBC664E3613D06D41D768EB9 /* Pods-WheatherForcastTests.debug.xcconfig */,
+				B9EE1E16CF6F5DBB8DD8885A8A68A5DF /* Pods-WheatherForcastTests.release.xcconfig */,
+			);
+			name = "Pods-WheatherForcastTests";
+			path = "Target Support Files/Pods-WheatherForcastTests";
+			sourceTree = "<group>";
+		};
+		91FFB711DCB51D90BA9B6565BFA1674B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				910EF855B11EB79072051C7676322FBA /* JSONModel.xcconfig */,
+				D5314FFF401F487E1ECD61831DDE6997 /* JSONModel-dummy.m */,
+				AEB137D9D0A0307AE6C68778B81EE720 /* JSONModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSONModel";
+			sourceTree = "<group>";
+		};
+		92A243A9AF51DA134F0701D4DF9DA562 /* KFOpenWeatherMapAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1CF53BCCBE5ED8869D62AC2C3AE7D2F8 /* JSONValueTransformer+Timestamp.h */,
+				8A85BDC7153CCCD4E344F80FFA4025D1 /* JSONValueTransformer+Timestamp.m */,
+				A703B25CD16B32AD0D58D5B9F6E1B07F /* KFOpenWeatherMapAPIClient.h */,
+				19544FCB5EA975BABE761C37DBA6513E /* KFOpenWeatherMapAPIClient.m */,
+				151352CB2E60D60F94885220C72D900A /* KFOWMCityModel.h */,
+				0EBA0C3A2A6AE9EB406642A7385B9971 /* KFOWMCityModel.m */,
+				A448133045AD6CDB38FAA6525F4FEBE3 /* KFOWMCloudModel.h */,
+				2BB29589B538CE3E5F6FEC74197289CC /* KFOWMCloudModel.m */,
+				43FF44D01AB237F651A06307259E46C6 /* KFOWMCoordinateModel.h */,
+				13C600A10DC6F7F25FED7116B5E32193 /* KFOWMCoordinateModel.m */,
+				D2525EC567BE01C7EF95F003C43F2947 /* KFOWMDailyForecastListModel.h */,
+				801A7BE758D8A8701A2D6D96909A3D52 /* KFOWMDailyForecastListModel.m */,
+				01F3467C23AA3F327D4B794F8ED53A79 /* KFOWMDailyForecastResponseModel.h */,
+				CFABE8C31A89A2B8083E7BE825E095B7 /* KFOWMDailyForecastResponseModel.m */,
+				56C0751F887B0D3BD0E48335DB4E75BB /* KFOWMForecastListModel.h */,
+				FD4C9E2745D4C88BDBC53D9C052DEDA1 /* KFOWMForecastListModel.m */,
+				2B0332DC83475582A6BFD5BB86276142 /* KFOWMForecastResponseModel.h */,
+				241B87546EFF2D4FB6E3FBAA784A2869 /* KFOWMForecastResponseModel.m */,
+				0D76D39631123932ABB2CA7BDBDADAD1 /* KFOWMForecastTemperatureModel.h */,
+				49EABFC663487EEDA2E24064D20683B6 /* KFOWMForecastTemperatureModel.m */,
+				3A19C8637203F93BE2ECFDAD8C9661B4 /* KFOWMMainWeatherModel.h */,
+				82F4438C1DBEC63E5059DEE8DC6E8700 /* KFOWMMainWeatherModel.m */,
+				9D012D8D3CFA67947FD4F8A6E1B58C60 /* KFOWMRainModel.h */,
+				20BFDEF460E2BF3343F16CB23A9B1F1C /* KFOWMRainModel.m */,
+				173E659BC36F96808398B2418B56FFB2 /* KFOWMSearchResponseModel.h */,
+				FBAD828F5E868D0C16CCFB22AF71BCBF /* KFOWMSearchResponseModel.m */,
+				A6195C50AC8F1236CBC145A28F01CE9F /* KFOWMSystemModel.h */,
+				B93C008276BA3B762513468097667F3A /* KFOWMSystemModel.m */,
+				D0453CCAB7A430C352516250546D2C04 /* KFOWMWeatherModel.h */,
+				556EA1D9C4F83534F95DD05CE100B3A1 /* KFOWMWeatherModel.m */,
+				D1E26A31BC2A9154099EB5AF1249B2CD /* KFOWMWeatherResponseModel.h */,
+				9E02A9BE1EF4C426B6C3BF8E833E7A45 /* KFOWMWeatherResponseModel.m */,
+				80A865FD0C4685B36B8A91F0F6F1EE22 /* KFOWMWindModel.h */,
+				893FF4F25A0FEA06FFD1B334DEE41F85 /* KFOWMWindModel.m */,
+				7B9659F0957573CE62465F4EAC3AC0BA /* Support Files */,
+			);
+			name = KFOpenWeatherMapAPI;
+			path = KFOpenWeatherMapAPI;
+			sourceTree = "<group>";
+		};
+		B52E3A84D7AFFEA300A3D123F826C6D6 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E37D6F0858F2E3AF29D1DFEBF0D1DAED /* Frameworks */,
+				503FA212ACBC254EBAC7C1ECEF488E44 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		CB79318D3E8AF2183319FF8098C5AE5E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A64716173FC0305057230E14CDCC7A77 /* CoreGraphics.framework */,
+				F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */,
+				B9FDBCCB266ACFED93E55656FD8A014C /* MobileCoreServices.framework */,
+				12A9374C39A6EFA90AD3F2E64799ECC5 /* Security.framework */,
+				EC8A7C0B6179467051ED95E59DB2AF9F /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D979AC384DC8CF955F7F181E7F160B1E /* LMGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				8A84C276BBA884C0803FC483BAD534B7 /* LMAddress.h */,
+				A069A11C1D0F7A7F3AFDB6152477F85E /* LMAddress.m */,
+				746DAFF69065DE5EA2AC65E001B1179C /* LMGeocoder.h */,
+				A6C942B6C82E9EE8CB85B756B7F14EBC /* LMGeocoder.m */,
+				488C58DEFDD34E025D744F493965ED12 /* Support Files */,
+			);
+			name = LMGeocoder;
+			path = LMGeocoder;
+			sourceTree = "<group>";
+		};
+		DFB754E51EC55A91A1B7A2C6970E89A3 /* Pods-WheatherForcastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB58F08BBCA411EF3E09B07AFBA56296 /* Pods-WheatherForcastUITests-acknowledgements.markdown */,
+				593650673645B40D01FB2991640A6DBF /* Pods-WheatherForcastUITests-acknowledgements.plist */,
+				85F7CF3695320CDB054A2B603E974142 /* Pods-WheatherForcastUITests-dummy.m */,
+				B9C3239F4FE85B5B6B286D970062337F /* Pods-WheatherForcastUITests-frameworks.sh */,
+				B85C1FAA2A5B55B711E12293A051E6C3 /* Pods-WheatherForcastUITests-resources.sh */,
+				685CADCCBF72269B69CB5E1F08E57FAB /* Pods-WheatherForcastUITests.debug.xcconfig */,
+				7156F4FAF4FAED05EA1FF9CA619CB4C8 /* Pods-WheatherForcastUITests.release.xcconfig */,
+			);
+			name = "Pods-WheatherForcastUITests";
+			path = "Target Support Files/Pods-WheatherForcastUITests";
+			sourceTree = "<group>";
+		};
+		E37D6F0858F2E3AF29D1DFEBF0D1DAED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77A2DFD4E0040AB1DC928914F0C0308A /* GoogleMaps.framework */,
+				EA78E216363547F6E7CF999727F25CE0 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC623EF69D3B7917606DBC45BDACC906 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C15090C315F539A1FEF93B50F073EC08 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F66475B01E2EEBA78A8E20580806C58E /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				28352869E7D18FCC97E30A0B356CD010 /* Frameworks */,
+				EC623EF69D3B7917606DBC45BDACC906 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		F81F6800874DBDA6EE4ACD60643AA3A8 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6001B325111B54237CA08CA00E7FF934 /* Base */,
+				B52E3A84D7AFFEA300A3D123F826C6D6 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		58FE764ABD031446741E8C1F9D8774C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12A8A3BABDBD3966DDF5202D9A6BF14 /* AFHTTPClient.h in Headers */,
+				22393F966C86D2067CD54102476F16B3 /* AFHTTPRequestOperation.h in Headers */,
+				D8CAE22C90885CEA8AF63B67C9678D4F /* AFImageRequestOperation.h in Headers */,
+				33E6908FF47D932FB3F225D573B93E2A /* AFJSONRequestOperation.h in Headers */,
+				B56F12ACBDB965EDDF72C1D1FD171782 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				6111F72B4180CEC3FAB0C50010139DA9 /* AFNetworking.h in Headers */,
+				6648F8F14B77023B260088848F48A8AC /* AFPropertyListRequestOperation.h in Headers */,
+				E07D90527BB10F6255468E979D0A4063 /* AFURLConnectionOperation.h in Headers */,
+				C3D7006A3FE52DF27863524D4836729D /* AFXMLRequestOperation.h in Headers */,
+				CF8CE48F04279993E81002AA7F9CF4F0 /* UIImageView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901286A0498A40B1542302F88FFDF9E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EBB6183F302416C109B3097BC9CE92 /* JSONValueTransformer+Timestamp.h in Headers */,
+				0A6BDF89F3B75AE938105C490787B70C /* KFOpenWeatherMapAPIClient.h in Headers */,
+				BBE990F3FF07D91918D1E8FF27EB8D5B /* KFOWMCityModel.h in Headers */,
+				EADC99D5FD5FE23AE4A43991C14FBFDE /* KFOWMCloudModel.h in Headers */,
+				E18447B7ECAD300995CBD10A7DE48EC2 /* KFOWMCoordinateModel.h in Headers */,
+				ECDC53EFCB560E7B999CB0EA5220ECD3 /* KFOWMDailyForecastListModel.h in Headers */,
+				C24A23E75AF06E93870635DA070FCAC2 /* KFOWMDailyForecastResponseModel.h in Headers */,
+				95191F339F7D1B731511FD0296A6B50C /* KFOWMForecastListModel.h in Headers */,
+				322C79F534E7AF2254D5F9C07A69CECA /* KFOWMForecastResponseModel.h in Headers */,
+				8E9B999351C774D9EB234C2832C012F5 /* KFOWMForecastTemperatureModel.h in Headers */,
+				E0C74194933EA562ECF4A44FAC85A379 /* KFOWMMainWeatherModel.h in Headers */,
+				E87474E33986D162D0953305A6360854 /* KFOWMRainModel.h in Headers */,
+				D4A6D3C50432CF200A1EFED246747895 /* KFOWMSearchResponseModel.h in Headers */,
+				AC30ECA59AB370965BF88E55D5F20CDE /* KFOWMSystemModel.h in Headers */,
+				12A9501D8C29AC0F83B9A54A4CBB3666 /* KFOWMWeatherModel.h in Headers */,
+				12B3FB55E6A1FF8B119D3814B27DC13C /* KFOWMWeatherResponseModel.h in Headers */,
+				2611E5599EF9C7A99DF61AFD411F699D /* KFOWMWindModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FC50786E5E6B2C7E494115B237C296 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53707C8E9063630510F1E6A36275BC33 /* JSONAPI.h in Headers */,
+				C5B804D74B774F7313ACDDAD3471D546 /* JSONHTTPClient.h in Headers */,
+				C1652FEE07EE48DC7277B180CACFABC8 /* JSONKeyMapper.h in Headers */,
+				1AAA70E698A9A1104C1A9F8727B82DDA /* JSONModel+networking.h in Headers */,
+				F471FDA23F7A8F3E0DF4B681CA898FA5 /* JSONModel.h in Headers */,
+				988C84FC5CDFF45926D238C0ADF0E470 /* JSONModelArray.h in Headers */,
+				387C47199D0E566DCD7DA228B20297C5 /* JSONModelClassProperty.h in Headers */,
+				EAC8D21ABBCC7BEDBE2DEE1B4BDF19BE /* JSONModelError.h in Headers */,
+				08CD7C0F3287AE71FCC88C262E5B5BA5 /* JSONModelLib.h in Headers */,
+				36AF5FD414EE93F0C9250394B9B920BC /* JSONValueTransformer.h in Headers */,
+				BCF6F1CD270BA9BC5BDC63815D818097 /* NSArray+JSONModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1A64AEDABBCD76B7A6C1C83B72DBCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31C9CF5AF03B0109850A0300A01038CD /* LMAddress.h in Headers */,
+				EDA63AF694E3FFBA6D96F73A5B33E8EB /* LMGeocoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		506B3227EE3B4F8F7F6F2216D3533BA4 /* Pods-WheatherForcastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA81273FDE7D840C64ECF20BFCB0992 /* Build configuration list for PBXNativeTarget "Pods-WheatherForcastUITests" */;
+			buildPhases = (
+				6EE1016494C61C4AC0CE0772E1B51420 /* Sources */,
+				1FB590ABF2F6F2A2B439BB73B9483286 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WheatherForcastUITests";
+			productName = "Pods-WheatherForcastUITests";
+			productReference = D654B11858D5550182CC78425BC82955 /* libPods-WheatherForcastUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5125A176778E9AA1E709C18E7E5EFBE6 /* KFOpenWeatherMapAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F18BE888EA16EC2CEED4EA1FA33FD2C /* Build configuration list for PBXNativeTarget "KFOpenWeatherMapAPI" */;
+			buildPhases = (
+				9A00312BEC88E1E93FF68D65F9BC3B4D /* Sources */,
+				3033D2C9808B1016F791AED0C3F411DB /* Frameworks */,
+				901286A0498A40B1542302F88FFDF9E8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709FFEAEA0BC208D97B2A79DE4E86B89 /* PBXTargetDependency */,
+				97822035553D12B4791994A3351C7776 /* PBXTargetDependency */,
+			);
+			name = KFOpenWeatherMapAPI;
+			productName = KFOpenWeatherMapAPI;
+			productReference = 717EB7A121C6B975F9A73DF2EF8B0CB4 /* libKFOpenWeatherMapAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		52B10DA402C4F280B24DD7D7392FCBCB /* Pods-WheatherForcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9668B3167671E7FF207FDAE4003E35 /* Build configuration list for PBXNativeTarget "Pods-WheatherForcast" */;
+			buildPhases = (
+				2C40C25D4E97E13D76121FFBC27F6CA0 /* Sources */,
+				7AD9C2E71BEC8C2C28265B8F5556FF2F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				381234A01B87C7B40B9C6B60552D145D /* PBXTargetDependency */,
+				84814EA410F9C04E6E92C78B664D515B /* PBXTargetDependency */,
+				BB6A30F426B6810A6311EAB2D5BF3897 /* PBXTargetDependency */,
+				F06C28E087A10BDFBD3EF60880150371 /* PBXTargetDependency */,
+			);
+			name = "Pods-WheatherForcast";
+			productName = "Pods-WheatherForcast";
+			productReference = F5512C8D5CAAC865AEC8BE305C61E31A /* libPods-WheatherForcast.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		53E7E9D15B3EFBCB998E237DE5EA8695 /* JSONModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4690814312D2F7011992A0230B377B60 /* Build configuration list for PBXNativeTarget "JSONModel" */;
+			buildPhases = (
+				D34D404B10D4253354A72A756FCB2FC5 /* Sources */,
+				3C49F22667C2C7B133100925E0E13917 /* Frameworks */,
+				90FC50786E5E6B2C7E494115B237C296 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONModel;
+			productName = JSONModel;
+			productReference = FA799F7F4D06D41FF671B68DCFDF8616 /* libJSONModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5431FA9F9CD15DE125C2E16335866233 /* LMGeocoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1124404148149231EE377E804F8DABFB /* Build configuration list for PBXNativeTarget "LMGeocoder" */;
+			buildPhases = (
+				72F8571D5CBB777A7462051D399B4E9E /* Sources */,
+				1A2DABCF7A4BA4F7EF8BFB1E79FC53DC /* Frameworks */,
+				EF1A64AEDABBCD76B7A6C1C83B72DBCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMGeocoder;
+			productName = LMGeocoder;
+			productReference = A01094F6D0BCEF93AB6EC17AC8C7608C /* libLMGeocoder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BBF39EC626DDEB4954AB88832ACEF757 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE14B30930737ACF2FC4AEA58251A7FF /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				A2D8D34D7A4846BB835914DD9878860C /* Sources */,
+				A182936A346E2F35813B44020E59739B /* Frameworks */,
+				58FE764ABD031446741E8C1F9D8774C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 066DDA671BA2332E390C698FC63EC5A8 /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E39146A61F2A8B5AC85E5C9C40BDEE43 /* Pods-WheatherForcastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A35C21D737382D59D3D39DCB85FA8E /* Build configuration list for PBXNativeTarget "Pods-WheatherForcastTests" */;
+			buildPhases = (
+				422CDFE4512A15D515A67CE4E7CA0D28 /* Sources */,
+				4E64D37C46C3321C82E64C9E7780CBEA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WheatherForcastTests";
+			productName = "Pods-WheatherForcastTests";
+			productReference = 171261252C84DC63B2840BDC0E38AC9F /* libPods-WheatherForcastTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 551CAC072B0246C5F82AFDD4B62B003B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBF39EC626DDEB4954AB88832ACEF757 /* AFNetworking */,
+				53E7E9D15B3EFBCB998E237DE5EA8695 /* JSONModel */,
+				5125A176778E9AA1E709C18E7E5EFBE6 /* KFOpenWeatherMapAPI */,
+				5431FA9F9CD15DE125C2E16335866233 /* LMGeocoder */,
+				52B10DA402C4F280B24DD7D7392FCBCB /* Pods-WheatherForcast */,
+				E39146A61F2A8B5AC85E5C9C40BDEE43 /* Pods-WheatherForcastTests */,
+				506B3227EE3B4F8F7F6F2216D3533BA4 /* Pods-WheatherForcastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C40C25D4E97E13D76121FFBC27F6CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D76A504C9948C36C622D1F97257795 /* Pods-WheatherForcast-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422CDFE4512A15D515A67CE4E7CA0D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F22C5A8C19A63423D2C1CD96587419 /* Pods-WheatherForcastTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE1016494C61C4AC0CE0772E1B51420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBAC59CA836B253AE8CE9EC95D01295 /* Pods-WheatherForcastUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F8571D5CBB777A7462051D399B4E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE8FA6F2FE343362F09AF2504588BB6 /* LMAddress.m in Sources */,
+				FF03ABF43E3D8E792CE054C4128D582A /* LMGeocoder-dummy.m in Sources */,
+				1EACB87864C8C39665914D4AA4916969 /* LMGeocoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A00312BEC88E1E93FF68D65F9BC3B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF5013EFFA9A11458C586555138DB05 /* JSONValueTransformer+Timestamp.m in Sources */,
+				2A553620AC8F5D38361170749059B3C2 /* KFOpenWeatherMapAPI-dummy.m in Sources */,
+				52664D4A949F2ECEF8713CFE55092A5A /* KFOpenWeatherMapAPIClient.m in Sources */,
+				46780AD6D6A5361FF7C4338CEE1C191A /* KFOWMCityModel.m in Sources */,
+				32280D46C4F3DD4EA6E645B3CFF7B1DB /* KFOWMCloudModel.m in Sources */,
+				A1445560417E2DB5C69F9556DA2B6509 /* KFOWMCoordinateModel.m in Sources */,
+				EE46BF183470777F57FB145189B95129 /* KFOWMDailyForecastListModel.m in Sources */,
+				61CA165577F69AA834F6800FCB8D459D /* KFOWMDailyForecastResponseModel.m in Sources */,
+				4147474001D36CCC7D34CB1F57852ADF /* KFOWMForecastListModel.m in Sources */,
+				3793E80A2662B3C68894E614E93B3DC1 /* KFOWMForecastResponseModel.m in Sources */,
+				40F06B5313CED91D5D419E5D8C1BC36C /* KFOWMForecastTemperatureModel.m in Sources */,
+				AE38EDDE9CC4AE575A60F79675BAA7C9 /* KFOWMMainWeatherModel.m in Sources */,
+				AB27A902079511202ADA05AE4AD012EA /* KFOWMRainModel.m in Sources */,
+				1340D0544171853C1A2C329444E25FFE /* KFOWMSearchResponseModel.m in Sources */,
+				08281D15A67E2295966F12BBE8F56999 /* KFOWMSystemModel.m in Sources */,
+				A96BD8584A7477D6C88E0DED371EDCB1 /* KFOWMWeatherModel.m in Sources */,
+				6AE140DBD03B9725598CE9C11354D160 /* KFOWMWeatherResponseModel.m in Sources */,
+				E2B860781E32683F1D789883AF496BBF /* KFOWMWindModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D8D34D7A4846BB835914DD9878860C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799551E312F37C3D0F3121BC83B8185E /* AFHTTPClient.m in Sources */,
+				6AD6C2328F40861EEF11420AB665B08B /* AFHTTPRequestOperation.m in Sources */,
+				565FB03530FE821E43ADF6A4A5871222 /* AFImageRequestOperation.m in Sources */,
+				32F154E584E72117A0258C8ABB752F40 /* AFJSONRequestOperation.m in Sources */,
+				D72B220D274E3735A01C91E274B45E5B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				24142FBDBE77D22994D7BAB19767D94F /* AFNetworking-dummy.m in Sources */,
+				8BEC397554CA8CD1CD24788EEBDFA568 /* AFPropertyListRequestOperation.m in Sources */,
+				B670CADA1417E9F7A384682817FD8BEB /* AFURLConnectionOperation.m in Sources */,
+				E5C081A06FE7881EB4065EA6730997E9 /* AFXMLRequestOperation.m in Sources */,
+				6D7E94149EB666FC74571196E35E1BF2 /* UIImageView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D404B10D4253354A72A756FCB2FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0255C49CF877D7B35A8AEA0DDA6C162F /* JSONAPI.m in Sources */,
+				A1D2BB6B397C6C5C60A4B6FC79AAD405 /* JSONHTTPClient.m in Sources */,
+				90F268BA80956D4B6D8E13AB6CFC4DB6 /* JSONKeyMapper.m in Sources */,
+				456A8E7D316D23C62758B8B25F555787 /* JSONModel+networking.m in Sources */,
+				5F3E45D44392E55DC395DEE05B7B7570 /* JSONModel-dummy.m in Sources */,
+				EA053F9B23C253858CEAA376206FE168 /* JSONModel.m in Sources */,
+				3DCEF31E6E3DD839BBA09660EC45E04D /* JSONModelArray.m in Sources */,
+				B26AB43675FA80DECDC9F73571DDC402 /* JSONModelClassProperty.m in Sources */,
+				1A23F73F84E707A3504AAD09C06DE3A3 /* JSONModelError.m in Sources */,
+				D56AFE13028BEDDEDFF41A53DBA580EE /* JSONValueTransformer.m in Sources */,
+				44CDB76FA42E353D69336EBB1A0CF8D9 /* NSArray+JSONModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		381234A01B87C7B40B9C6B60552D145D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = BBF39EC626DDEB4954AB88832ACEF757 /* AFNetworking */;
+			targetProxy = E2ADCB6AFDC2D22863DBDD7C0C44FAC9 /* PBXContainerItemProxy */;
+		};
+		709FFEAEA0BC208D97B2A79DE4E86B89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = BBF39EC626DDEB4954AB88832ACEF757 /* AFNetworking */;
+			targetProxy = 1EC356E036C61569F68B038310EC3013 /* PBXContainerItemProxy */;
+		};
+		84814EA410F9C04E6E92C78B664D515B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONModel;
+			target = 53E7E9D15B3EFBCB998E237DE5EA8695 /* JSONModel */;
+			targetProxy = 38E46BE9533221B3FA46F8AA135A68EA /* PBXContainerItemProxy */;
+		};
+		97822035553D12B4791994A3351C7776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONModel;
+			target = 53E7E9D15B3EFBCB998E237DE5EA8695 /* JSONModel */;
+			targetProxy = 8013DD78011E2EC6C828F64DECC2F613 /* PBXContainerItemProxy */;
+		};
+		BB6A30F426B6810A6311EAB2D5BF3897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KFOpenWeatherMapAPI;
+			target = 5125A176778E9AA1E709C18E7E5EFBE6 /* KFOpenWeatherMapAPI */;
+			targetProxy = C8680B368EF74E0B306AD4FBE69F38BE /* PBXContainerItemProxy */;
+		};
+		F06C28E087A10BDFBD3EF60880150371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LMGeocoder;
+			target = 5431FA9F9CD15DE125C2E16335866233 /* LMGeocoder */;
+			targetProxy = 62E0CB81AF9DE9F28070B70F8FBBD33A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10AB44EC77FD5BD4A67EA34717C001BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910EF855B11EB79072051C7676322FBA /* JSONModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F4E3BD2B616997EAE709E01C236F250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6E5BEEEBC664E3613D06D41D768EB9 /* Pods-WheatherForcastTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F86C83D0E960ABD3CA0654B513BA4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7156F4FAF4FAED05EA1FF9CA619CB4C8 /* Pods-WheatherForcastUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2511C574393AF17EAEBFA27F02715CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52953685B742D1963DC6D9CFD781C59A /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2CDC2DC6D82FCBCB079D90EE6D20D04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC90C1E276148E52DA17CCC66E5FEC46 /* Pods-WheatherForcast.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		48EF8DB9CFF89D4C9EB85575A4EAC653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FF796AE371FEF74EF22FFDCC8014EF /* LMGeocoder.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoder/LMGeocoder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5AA584FE8D122BB33AB894C2FC5B8D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910EF855B11EB79072051C7676322FBA /* JSONModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5FEDE17AA6A4F0E949E11FBD78BFD715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EE1E16CF6F5DBB8DD8885A8A68A5DF /* Pods-WheatherForcastTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79455B7B3663E6744548A228B1687413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685CADCCBF72269B69CB5E1F08E57FAB /* Pods-WheatherForcastUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		927D4E600B67FACC23986DDE03DFCB31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063D8B975F2792019DC5B5FF7B5E1F03 /* Pods-WheatherForcast.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		99985403D14BFEB0AD9A4AEB1AFB1752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0109EAF00EDFE6E3106AA1527CE2D5C /* KFOpenWeatherMapAPI.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KFOpenWeatherMapAPI/KFOpenWeatherMapAPI-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A41EC18FD9B369157C6AE07AD4A506BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52953685B742D1963DC6D9CFD781C59A /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D391CA77EB02DC9A519BA723F973EA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FF796AE371FEF74EF22FFDCC8014EF /* LMGeocoder.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMGeocoder/LMGeocoder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D7B1487F48E36BAD2CEF0AFCA4908B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FDF564FF9F28255D6030E7352A777FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0109EAF00EDFE6E3106AA1527CE2D5C /* KFOpenWeatherMapAPI.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KFOpenWeatherMapAPI/KFOpenWeatherMapAPI-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1124404148149231EE377E804F8DABFB /* Build configuration list for PBXNativeTarget "LMGeocoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D391CA77EB02DC9A519BA723F973EA99 /* Debug */,
+				48EF8DB9CFF89D4C9EB85575A4EAC653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F18BE888EA16EC2CEED4EA1FA33FD2C /* Build configuration list for PBXNativeTarget "KFOpenWeatherMapAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99985403D14BFEB0AD9A4AEB1AFB1752 /* Debug */,
+				FDF564FF9F28255D6030E7352A777FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B1487F48E36BAD2CEF0AFCA4908B67 /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4690814312D2F7011992A0230B377B60 /* Build configuration list for PBXNativeTarget "JSONModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA584FE8D122BB33AB894C2FC5B8D3E /* Debug */,
+				10AB44EC77FD5BD4A67EA34717C001BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA81273FDE7D840C64ECF20BFCB0992 /* Build configuration list for PBXNativeTarget "Pods-WheatherForcastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79455B7B3663E6744548A228B1687413 /* Debug */,
+				1F86C83D0E960ABD3CA0654B513BA4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE14B30930737ACF2FC4AEA58251A7FF /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2511C574393AF17EAEBFA27F02715CFF /* Debug */,
+				A41EC18FD9B369157C6AE07AD4A506BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A35C21D737382D59D3D39DCB85FA8E /* Build configuration list for PBXNativeTarget "Pods-WheatherForcastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4E3BD2B616997EAE709E01C236F250 /* Debug */,
+				5FEDE17AA6A4F0E949E11FBD78BFD715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9668B3167671E7FF207FDAE4003E35 /* Build configuration list for PBXNativeTarget "Pods-WheatherForcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927D4E600B67FACC23986DDE03DFCB31 /* Debug */,
+				2CDC2DC6D82FCBCB079D90EE6D20D04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

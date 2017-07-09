@@ -1,0 +1,32 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
+  - JSONModel (0.9.3)
+  - KFOpenWeatherMapAPI (0.2.4):
+    - AFNetworking (~> 1.0)
+    - JSONModel (~> 0.9.1)
+  - LMGeocoder (1.0.8)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - KFOpenWeatherMapAPI
+  - LMGeocoder
+
+SPEC CHECKSUMS:
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  JSONModel: d9d4d64fb24abd81a02c8d4ecb7a922effa728fd
+  KFOpenWeatherMapAPI: 69eb41124f21b982f78d7548d8e6cadca9ba179b
+  LMGeocoder: 7682148ce0bc55e483ceaa0eefdae4494d7102be
+
+PODFILE CHECKSUM: e7e0326e73b5aeafa15a76686e7ab83d8f0f4b3f
+
+COCOAPODS: 1.2.1
