@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <AVKit/AVKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "Config.h"
+#import "CommonFunctions.h"
+
+@import GoogleMaps;
+@import GooglePlaces;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -20,6 +27,19 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
+    /**
+     Used to get current loation of user
+     */
+- (void)getCurrentLocation;
+    
+    /**
+     used to get address from Location
+     
+     @param location CLLocation
+     */
+- (void) getAddressFromLocation: (CLLocation*) location;
 
+
+    
 @end
 

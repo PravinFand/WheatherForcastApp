@@ -14,8 +14,12 @@
 
 @implementation AppDelegate
 
-    //
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   
+    [GMSPlacesClient provideAPIKey:GOOGLE_API_KEY];
+    [GMSServices provideAPIKey:GOOGLE_API_KEY];
+    [self getCurrentLocation];
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -124,4 +128,56 @@
     }
 }
 
+    - (void)getCurrentLocation
+    {
+        
+        locationManager = [[CLLocationManager alloc] init];
+        locationManager.delegate = self;
+        locationManager.distanceFilter = kCLDistanceFilterNone;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        if([[[UIDevice currentDevice]systemVersion]floatValue]>=8.0) {
+            [locationManager requestWhenInUseAuthorization];
+        }
+        [locationManager startUpdatingLocation];
+    }
+    
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    //NSLog(@"didUpdateToLocation: %@",[locations lastObject]);
+    currentLocation = [locations lastObject];
+    if (currentLocation != nil) {
+        CURRENT_LATITUDE    =   currentLocation.coordinate.latitude;
+        CURRENT_LONGITUDE   =   currentLocation.coordinate.longitude;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void)
+                       {
+                           [self getAddressFromLocation:currentLocation];
+                       });
+    }
+}
+    
+- (void) getAddressFromLocation: (CLLocation*) location {
+    if (CURRENT_ADDRESS) {
+        return;
+    }
+    //NSLog(@"getting address...");
+    NSString *req = [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?latlng=%@,%@&output=csv",[NSString stringWithFormat:@"%f",location.coordinate.latitude],[NSString stringWithFormat:@"%f",location.coordinate.longitude]];
+    
+    NSString *result = [NSString stringWithContentsOfURL:[NSURL URLWithString:req] encoding:NSUTF8StringEncoding error:NULL];
+    
+    if (result) {
+        NSError *error;
+        NSData *data = [result dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *dictResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+        NSArray *resultArr = [dictResponse objectForKey:@"results"]; //objectForKey:@"geometry"];
+        
+        if(resultArr.count > 0) {
+            NSDictionary *dict = [resultArr objectAtIndex:0];
+            if ([dict objectForKey:@"formatted_address"]) {
+                dispatch_sync(dispatch_get_main_queue(), ^{
+                    CURRENT_ADDRESS = [dict objectForKey:@"formatted_address"];
+                });
+            }
+        }
+    }
+}
+    
 @end

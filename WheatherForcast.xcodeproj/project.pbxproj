@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		23F1054E5946BB3BED4752A9 /* libPods-WheatherForcastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D578421832D5404EE02C79D6 /* libPods-WheatherForcastTests.a */; };
 		7A8392F91FE91207E5624B51 /* libPods-WheatherForcast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA166634B5774DEBD113E5F9 /* libPods-WheatherForcast.a */; };
+		C89CFE4C1F1399E300ABA022 /* BookmarkedCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CFE4B1F1399E300ABA022 /* BookmarkedCityViewController.m */; };
+		C89CFE4F1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89CFE4E1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m */; };
 		CD50E81ED1161EE6D0D84B0C /* libPods-WheatherForcastUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3195E7E77B4B1A5A7702EF5 /* libPods-WheatherForcastUITests.a */; };
 		D82E0BEE1F113368000B7EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BED1F113368000B7EEA /* main.m */; };
 		D82E0BF11F113368000B7EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BF01F113368000B7EEA /* AppDelegate.m */; };
-		D82E0BF41F113368000B7EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BF31F113368000B7EEA /* ViewController.m */; };
 		D82E0BF71F113368000B7EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82E0BF51F113368000B7EEA /* Main.storyboard */; };
 		D82E0BFA1F113368000B7EEA /* WheatherForcast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D82E0BF81F113368000B7EEA /* WheatherForcast.xcdatamodeld */; };
 		D82E0BFC1F113368000B7EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82E0BFB1F113368000B7EEA /* Assets.xcassets */; };
@@ -51,13 +52,15 @@
 		9C250D653856DB53C16F3FF5 /* Pods-WheatherForcastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcastTests/Pods-WheatherForcastTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3195E7E77B4B1A5A7702EF5 /* libPods-WheatherForcastUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WheatherForcastUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F55C011E97E6C54C405E8B /* Pods-WheatherForcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherForcast.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherForcast/Pods-WheatherForcast.release.xcconfig"; sourceTree = "<group>"; };
+		C89CFE4A1F1399E300ABA022 /* BookmarkedCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkedCityViewController.h; sourceTree = "<group>"; };
+		C89CFE4B1F1399E300ABA022 /* BookmarkedCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkedCityViewController.m; sourceTree = "<group>"; };
+		C89CFE4D1F139B5700ABA022 /* WeatherForcaastDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForcaastDetailsViewController.h; sourceTree = "<group>"; };
+		C89CFE4E1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForcaastDetailsViewController.m; sourceTree = "<group>"; };
 		D578421832D5404EE02C79D6 /* libPods-WheatherForcastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WheatherForcastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82E0BE91F113367000B7EEA /* WheatherForcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherForcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82E0BED1F113368000B7EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D82E0BEF1F113368000B7EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D82E0BF01F113368000B7EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D82E0BF21F113368000B7EEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D82E0BF31F113368000B7EEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D82E0BF61F113368000B7EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D82E0BF91F113368000B7EEA /* WheatherForcast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WheatherForcast.xcdatamodel; sourceTree = "<group>"; };
 		D82E0BFB1F113368000B7EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,14 +165,16 @@
 				D84E89A61F124EFE00045844 /* CustomLocationPicker */,
 				D82E0BEF1F113368000B7EEA /* AppDelegate.h */,
 				D82E0BF01F113368000B7EEA /* AppDelegate.m */,
-				D82E0BF21F113368000B7EEA /* ViewController.h */,
-				D82E0BF31F113368000B7EEA /* ViewController.m */,
 				D82E0BF51F113368000B7EEA /* Main.storyboard */,
 				D82E0BFB1F113368000B7EEA /* Assets.xcassets */,
 				D82E0BFD1F113368000B7EEA /* LaunchScreen.storyboard */,
 				D82E0C001F113368000B7EEA /* Info.plist */,
 				D82E0BF81F113368000B7EEA /* WheatherForcast.xcdatamodeld */,
 				D82E0BEC1F113368000B7EEA /* Supporting Files */,
+				C89CFE4A1F1399E300ABA022 /* BookmarkedCityViewController.h */,
+				C89CFE4B1F1399E300ABA022 /* BookmarkedCityViewController.m */,
+				C89CFE4D1F139B5700ABA022 /* WeatherForcaastDetailsViewController.h */,
+				C89CFE4E1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m */,
 			);
 			path = WheatherForcast;
 			sourceTree = "<group>";
@@ -511,9 +516,10 @@
 				D84E89A91F124EFE00045844 /* CustomLocationPickerVC.m in Sources */,
 				D84E89B61F12507200045844 /* Config.m in Sources */,
 				D84E89B51F12507200045844 /* NSString+urlencode.m in Sources */,
-				D82E0BF41F113368000B7EEA /* ViewController.m in Sources */,
 				D84E89B41F12507200045844 /* CommonFunctions.m in Sources */,
 				D82E0BF11F113368000B7EEA /* AppDelegate.m in Sources */,
+				C89CFE4C1F1399E300ABA022 /* BookmarkedCityViewController.m in Sources */,
+				C89CFE4F1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m in Sources */,
 				D82E0BFA1F113368000B7EEA /* WheatherForcast.xcdatamodeld in Sources */,
 				D82E0BEE1F113368000B7EEA /* main.m in Sources */,
 			);

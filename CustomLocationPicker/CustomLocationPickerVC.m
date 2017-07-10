@@ -22,7 +22,7 @@
     self.country = @"";
     
     // Do any additional setup after loading the view.
-    self.title = @"SELECT ADDRESS";
+    self.title = @"SELECT LOCATION";
     [CommonFunctions setRightBarButtonItemWithTitle:nil andBackGroundImage:[UIImage imageNamed:@"search"] andSelector:@selector(searchButtonAction) withTarget:self onController:self];
     
     [self.navigationController setNavigationBarHidden:NO];
