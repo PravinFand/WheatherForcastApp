@@ -19,8 +19,10 @@
 #import "KFOWMSearchResponseModel.h"
 #import "KFOWMSystemModel.h"
 #import "KFOWMWindModel.h"
+#import "KFOWMWeatherModel.h"
 
-@interface WeatherForcaastDetailsViewController ()
+
+@interface WeatherForcaastDetailsViewController ()<KFOWMWeatherModel>
 
 @property (nonatomic, strong) KFOpenWeatherMapAPIClient *apiClient;
 @property (nonatomic, strong) KFOWMWeatherResponseModel *responseModel;
@@ -40,16 +42,19 @@
     [super viewDidLoad];
     
     self.title = @"Wheather Details";
-    self.navigationItem.leftBarButtonItem.title = @"Back";
+    [self.navigationItem.leftBarButtonItem setTitle:@"Back"];
     
     self.apiClient = [[KFOpenWeatherMapAPIClient alloc] initWithAPIKey:@"c6e381d8c7ff98f0fee43775817cf6ad" andAPIVersion:@"2.5"];
+    self.apiClient.temperatureType = KFOWMTemperatureTypeFahrenheit;
+    self.apiClient.unitType = KFOWMUnitTypeMetric;
+    
     
     [self.apiClient weatherForCoordinate:_locationCoordinate withResultBlock:^(BOOL success, id responseData, NSError *error)
      {
          if (success)
          {
              _responseModel = (KFOWMWeatherResponseModel *)responseData;
-             NSLog(@"received weather: %@, temperature: %@ K, %@%%rH, %@ mbar", _responseModel.cityName, _responseModel.mainWeather.temperature, _responseModel.mainWeather.humidity, _responseModel.mainWeather.pressure)
+             NSLog(@"received weather: %@, temperature: %@ C, %@%%rH, %@ mbar", _responseModel.cityName, _responseModel.mainWeather.temperature, _responseModel.mainWeather.humidity, _responseModel.mainWeather.pressure)
              ;
              [self updateWheatherForcast];
          }
@@ -61,14 +66,16 @@
 }
 
 - (void)updateWheatherForcast {
-    
+
     self.cityNameLable.text = _bookmarkedLocation.address;
     
-    self.rainyChancesLable.text = [NSString stringWithFormat:@"Rain: %@", _responseModel.rain];
-    self.tempratureLable.text = [NSString stringWithFormat:@"Temperature: %@ K", _responseModel.mainWeather.temperature];
-    self.humidityLable.text = [NSString stringWithFormat:@"Humidity: %@%%rH", _responseModel.mainWeather.humidity];
-    self.windLable.text = [NSString stringWithFormat:@"Wind Speed: %@, Direction: %@", _responseModel.wind.speed, _responseModel.wind.deg];
-    self.pressureLable.text = [NSString stringWithFormat:@"Pressure: %@ mbar", _responseModel.mainWeather.pressure];
+  KFOWMWeatherModel *wheather = (KFOWMWeatherModel *)[_responseModel.weather firstObject];
+    
+    self.rainyChancesLable.text = [NSString stringWithFormat:@"%@: %@",wheather.main, wheather.weatherDescription];
+    self.tempratureLable.text = [NSString stringWithFormat:@"Temperature: %0.1f˚C", [[self.apiClient kelvinToCelcius:_responseModel.mainWeather.temperature] doubleValue]];
+    self.humidityLable.text = [NSString stringWithFormat:@"Humidity: %0.2f%%rH", [_responseModel.mainWeather.humidity doubleValue]];
+    self.windLable.text = [NSString stringWithFormat:@"Wind Speed: %@ m/s, Direction: %0.2f˚", _responseModel.wind.speed, [_responseModel.wind.deg doubleValue]];
+    self.pressureLable.text = [NSString stringWithFormat:@"Pressure: %0.2fhpa", [_responseModel.mainWeather.pressure doubleValue]];
 }
 
 - (void)didReceiveMemoryWarning {
