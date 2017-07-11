@@ -8,27 +8,38 @@
 
 #import "BookmarkedCityViewController.h"
 #import "CustomLocationPickerVC.h"
+#import "Config.h"
+#import <CoreData/CoreData.h>
+#import "BookmarkedLocation.h"
+#import "AppDelegate.h"
+#import "WeatherForcaastDetailsViewController.h"
 
 @interface BookmarkedCityViewController ()
+
+@property (nonatomic, strong) NSArray *bookmarkedLocations;
+@property (nonatomic, strong) BookmarkedLocation *bookmarkedLocation;
 
 @end
 
 @implementation BookmarkedCityViewController
 
 - (void)viewDidLoad {
-   
+    
     [super viewDidLoad];
- 
+    
     [CommonFunctions setRightBarButtonItemWithTitle:nil
                                  andBackGroundImage:[UIImage imageNamed:@"search"]
                                         andSelector:@selector(addNewLocationClicked)
                                          withTarget:self
                                        onController:self];
+    self.title = @"Bookmarked Locations";
+    
+    [self fetchBookMarkedList];
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -40,52 +51,92 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 2;
+    return [_bookmarkedLocations count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BookmarkedCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text = @"Pune";
+    BookmarkedLocation *location = [_bookmarkedLocations objectAtIndex:indexPath.row];
+    cell.textLabel.text = location.address;
     
     return cell;
 }
-    
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-   // [self performSegueWithIdentifier:@"showWheatherForcast" sender:self];
+    _bookmarkedLocation = (BookmarkedLocation *)[_bookmarkedLocations objectAtIndex:indexPath.row];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    WeatherForcaastDetailsViewController *detailsVC = (WeatherForcaastDetailsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"WeatherForcaastDetailsVC"];
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([_bookmarkedLocation.lat doubleValue], [_bookmarkedLocation.lng doubleValue]);
+    
+    detailsVC.locationCoordinate = coordinate;
+    detailsVC.bookmarkedLocation = _bookmarkedLocation;
+    
+    [self.navigationController pushViewController:detailsVC animated:YES];
 }
 
 #pragma mark - Navigation
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue destinationViewController] isKindOfClass:[CustomLocationPickerVC class]]) {
+        CustomLocationPickerVC *vc = (CustomLocationPickerVC *)[segue destinationViewController];
+        vc.lat = [NSString stringWithFormat:@"%f", CURRENT_LATITUDE] ? [NSString stringWithFormat:@"%f", CURRENT_LATITUDE] : @"";
+        vc.lng = [NSString stringWithFormat:@"%f", CURRENT_LONGITUDE] ? [NSString stringWithFormat:@"%f", CURRENT_LONGITUDE] : @"";
+        vc.address = CURRENT_ADDRESS ? CURRENT_ADDRESS : @"";
+    }
 }
 
 - (void)addNewLocationClicked {
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     CustomLocationPickerVC *customLocationPickerVC = (CustomLocationPickerVC *)[storyboard instantiateViewControllerWithIdentifier:@"CustomLocationPickerVC"];
-        
+    
     [self.navigationController pushViewController:customLocationPickerVC animated:YES];
 }
 
 - (IBAction)unwindFromLocationPickerToCreateOrder:(UIStoryboardSegue *)segue {
-   
+    
     if ([[segue sourceViewController] isKindOfClass:[CustomLocationPickerVC class]]) {
-        //        ProfileCell *cell = (ProfileCell*)[self.registerTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
+        
         CustomLocationPickerVC *vc = (CustomLocationPickerVC *)[segue sourceViewController];
         
+        BookmarkedLocation *object = [NSEntityDescription insertNewObjectForEntityForName:@"BookmarkedLocationsEntity"
+                                                                   inManagedObjectContext:APP_DELEGATE.managedObjectContext];
+        [object setValue:vc.lat forKey:@"lat"];
+        [object setValue:vc.lng forKey:@"lng"];
+        [object setValue:vc.address forKey:@"address"];
+        [object setValue:vc.city forKey:@"city"];
+        [object setValue:vc.country forKey:@"country"];
         
-        //self.labelLat.text = [NSString stringWithFormat:@"LAT - %@", vc.lat];
-        //self.labelLng.text = [NSString stringWithFormat:@"LNG - %@", vc.lng];
-        //self.labelFormattedAddress.text = [NSString stringWithFormat:@"ADDRESS - %@", vc.address];
-        //self.labelAddressName.text = [NSString stringWithFormat:@"CITY - %@, COUNTRY - %@", vc.city, vc.country];
+        NSError *error;
+        if (![APPDELEGATE.managedObjectContext save:&error]) {
+            NSLog(@"Failed to save - error: %@", [error localizedDescription]);
+        }
+        
+        [self fetchBookMarkedList];
     }
+}
+
+- (void)fetchBookMarkedList {
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"BookmarkedLocationsEntity" inManagedObjectContext:APP_DELEGATE.managedObjectContext];
+    [request setEntity:entity];
+    
+    NSError *errorFetch = nil;
+    _bookmarkedLocations = [APP_DELEGATE.managedObjectContext executeFetchRequest:request error:&errorFetch];
+    
+    for (BookmarkedLocation *object in _bookmarkedLocations) {
+        NSLog(@"\nobject value1 = %@", object.city);
+        NSLog(@"\nobject value1 = %@", object.lat);
+        NSLog(@"\nobject value1 = %@", object.lng);
+    }
+    
+    [self.tableView reloadData];
 }
 
 @end

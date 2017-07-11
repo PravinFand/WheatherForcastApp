@@ -18,29 +18,40 @@
 #import "KFOWMDailyForecastListModel.h"
 #import "KFOWMSearchResponseModel.h"
 #import "KFOWMSystemModel.h"
-
+#import "KFOWMWindModel.h"
 
 @interface WeatherForcaastDetailsViewController ()
-    
+
 @property (nonatomic, strong) KFOpenWeatherMapAPIClient *apiClient;
 @property (nonatomic, strong) KFOWMWeatherResponseModel *responseModel;
+@property (weak, nonatomic) IBOutlet UILabel *cityNameLable;
+@property (weak, nonatomic) IBOutlet UILabel *rainyChancesLable;
+@property (weak, nonatomic) IBOutlet UILabel *tempratureLable;
+@property (weak, nonatomic) IBOutlet UILabel *humidityLable;
+@property (weak, nonatomic) IBOutlet UILabel *windLable;
+@property (weak, nonatomic) IBOutlet UILabel *pressureLable;
 
 @end
 
 @implementation WeatherForcaastDetailsViewController
-    
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
+    self.title = @"Wheather Details";
+    self.navigationItem.leftBarButtonItem.title = @"Back";
+    
     self.apiClient = [[KFOpenWeatherMapAPIClient alloc] initWithAPIKey:@"c6e381d8c7ff98f0fee43775817cf6ad" andAPIVersion:@"2.5"];
     
-    [self.apiClient weatherForCityName:@"Pune" withResultBlock:^(BOOL success, id responseData, NSError *error)
+    [self.apiClient weatherForCoordinate:_locationCoordinate withResultBlock:^(BOOL success, id responseData, NSError *error)
      {
          if (success)
          {
-            _responseModel = (KFOWMWeatherResponseModel *)responseData;
-             NSLog(@"received weather: %@, temperature: %@ K, %@%%rH, %@ mbar", _responseModel.cityName, _responseModel.mainWeather.temperature, _responseModel.mainWeather.humidity, _responseModel.mainWeather.pressure);
+             _responseModel = (KFOWMWeatherResponseModel *)responseData;
+             NSLog(@"received weather: %@, temperature: %@ K, %@%%rH, %@ mbar", _responseModel.cityName, _responseModel.mainWeather.temperature, _responseModel.mainWeather.humidity, _responseModel.mainWeather.pressure)
+             ;
+             [self updateWheatherForcast];
          }
          else
          {
@@ -48,21 +59,22 @@
          }
      }];
 }
+
+- (void)updateWheatherForcast {
     
+    self.cityNameLable.text = _bookmarkedLocation.address;
+    
+    self.rainyChancesLable.text = [NSString stringWithFormat:@"Rain: %@", _responseModel.rain];
+    self.tempratureLable.text = [NSString stringWithFormat:@"Temperature: %@ K", _responseModel.mainWeather.temperature];
+    self.humidityLable.text = [NSString stringWithFormat:@"Humidity: %@%%rH", _responseModel.mainWeather.humidity];
+    self.windLable.text = [NSString stringWithFormat:@"Wind Speed: %@, Direction: %@", _responseModel.wind.speed, _responseModel.wind.deg];
+    self.pressureLable.text = [NSString stringWithFormat:@"Pressure: %@ mbar", _responseModel.mainWeather.pressure];
+}
+
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-    
-    /*
-     #pragma mark - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    @end
+
+@end

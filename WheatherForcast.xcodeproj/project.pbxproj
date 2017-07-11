@@ -25,6 +25,7 @@
 		D84E89B41F12507200045844 /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89AE1F12507200045844 /* CommonFunctions.m */; };
 		D84E89B51F12507200045844 /* NSString+urlencode.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89B01F12507200045844 /* NSString+urlencode.m */; };
 		D84E89B61F12507200045844 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89B31F12507200045844 /* Config.m */; };
+		D84E89BC1F147C4F00045844 /* BookmarkedLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D84E89BB1F147C4F00045844 /* BookmarkedLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		D84E89B01F12507200045844 /* NSString+urlencode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlencode.m"; sourceTree = "<group>"; };
 		D84E89B21F12507200045844 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		D84E89B31F12507200045844 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		D84E89BA1F147C4F00045844 /* BookmarkedLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkedLocation.h; sourceTree = "<group>"; };
+		D84E89BB1F147C4F00045844 /* BookmarkedLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkedLocation.m; sourceTree = "<group>"; };
 		FA166634B5774DEBD113E5F9 /* libPods-WheatherForcast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WheatherForcast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +178,8 @@
 				C89CFE4B1F1399E300ABA022 /* BookmarkedCityViewController.m */,
 				C89CFE4D1F139B5700ABA022 /* WeatherForcaastDetailsViewController.h */,
 				C89CFE4E1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m */,
+				D84E89BA1F147C4F00045844 /* BookmarkedLocation.h */,
+				D84E89BB1F147C4F00045844 /* BookmarkedLocation.m */,
 			);
 			path = WheatherForcast;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 				D82E0BF11F113368000B7EEA /* AppDelegate.m in Sources */,
 				C89CFE4C1F1399E300ABA022 /* BookmarkedCityViewController.m in Sources */,
 				C89CFE4F1F139B5700ABA022 /* WeatherForcaastDetailsViewController.m in Sources */,
+				D84E89BC1F147C4F00045844 /* BookmarkedLocation.m in Sources */,
 				D82E0BFA1F113368000B7EEA /* WheatherForcast.xcdatamodeld in Sources */,
 				D82E0BEE1F113368000B7EEA /* main.m in Sources */,
 			);

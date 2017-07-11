@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "BookmarkedLocation.h"
 
 @interface WeatherForcaastDetailsViewController : UIViewController
+
+@property (nonatomic, assign) CLLocationCoordinate2D locationCoordinate;
+@property (nonatomic, strong) BookmarkedLocation *bookmarkedLocation;
+
 
 @end
